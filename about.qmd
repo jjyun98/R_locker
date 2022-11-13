@@ -1,0 +1,15 @@
+---
+title: "about"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com/jjyun98
+---
+
+통계학과 3학년의 학습내용을 담은 블로그입니다.
