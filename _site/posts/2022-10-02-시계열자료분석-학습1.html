@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Yun98 – quarto-inputf292414c</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src=".././img/school-locker.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Yun98</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jjyun98/R_locker/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+<section id="수업-시계열-자료분석-실습-1" class="level1">
+<h1>(수업) 시계열 자료분석 실습 1</h1>
+<blockquote class="blockquote">
+<p>불규칙, 추세성분, 주기성분의 이해 - toc:true - branch: master - badges: true - comments: true - author: 조윤호</p>
+</blockquote>
+<div class="cell" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'data.table'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'gridExtra'</span>) <span class="co"># grid.arrange 사용해주는(그림 한 화면에 그려주는, 사실 jupyter에서는 별로 쓸모 없음) </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'lmtest'</span>) <span class="co"># dwtest</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="불규칙-성분" class="level2">
+<h2 class="anchored" data-anchor-id="불규칙-성분">불규칙 성분</h2>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1245</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1245</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="dv">5000</span> <span class="sc">+</span> <span class="dv">20</span><span class="sc">*</span><span class="fu">rnorm</span>(n)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>z <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>5008.38280132228</li><li>4970.88332789754</li><li>4970.88239836075</li><li>4979.68707256194</li><li>4989.33801721561</li><li>4986.32787849186</li></ol>
+</div>
+</div>
+<p><code>-</code> 같은 방법</p>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1245</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(n, <span class="dv">5000</span>, <span class="dv">20</span>) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>5008.38280132228</li><li>4970.88332789754</li><li>4970.88239836075</li><li>4979.68707256194</li><li>4989.33801721561</li><li>4986.32787849186</li></ol>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">rnorm</span>(n), <span class="at">type =</span> <span class="st">'l'</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>20곱하면 표준편차가 +- 20정도 증가</li>
+</ul>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">20</span><span class="sc">*</span><span class="fu">rnorm</span>(n), <span class="at">type =</span> <span class="st">'l'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>5000더하면 평균도 5000증가</li>
+</ul>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">5000</span> <span class="sc">+</span> <span class="dv">20</span><span class="sc">*</span><span class="fu">rnorm</span>(n), <span class="at">type =</span> <span class="st">'l'</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">5000</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>ts</code> : TimeSeries로 바꿔주는 함수(시계열)</p>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(z,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1980</span>,<span class="dv">1</span>), <span class="co"># 1980년 1월부터 시작</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">frequency =</span> <span class="dv">12</span>) <span class="co"># 12면 월별로, 4면 분기별로, 365면 일별로</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>z.ts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A Time Series: 9 × 12</caption>
+<thead>
+    <tr><th></th><th scope="col">Jan</th><th scope="col">Feb</th><th scope="col">Mar</th><th scope="col">Apr</th><th scope="col">May</th><th scope="col">Jun</th><th scope="col">Jul</th><th scope="col">Aug</th><th scope="col">Sep</th><th scope="col">Oct</th><th scope="col">Nov</th><th scope="col">Dec</th></tr>
+</thead>
+<tbody>
+    <tr><th scope="row">1980</th><td>5008.383</td><td>4970.883</td><td>4970.882</td><td>4979.687</td><td>4989.338</td><td>4986.328</td><td>5006.518</td><td>5018.451</td><td>4998.983</td><td>5005.944</td><td>4988.978</td><td>4985.049</td></tr>
+    <tr><th scope="row">1981</th><td>5017.035</td><td>4999.103</td><td>4970.289</td><td>4994.124</td><td>4962.204</td><td>4986.311</td><td>5013.922</td><td>4970.494</td><td>4988.571</td><td>4978.363</td><td>4974.529</td><td>5009.565</td></tr>
+    <tr><th scope="row">1982</th><td>4976.217</td><td>4996.012</td><td>4966.755</td><td>5029.489</td><td>5018.575</td><td>5011.398</td><td>5013.209</td><td>5023.421</td><td>4997.901</td><td>5012.820</td><td>4982.245</td><td>5003.137</td></tr>
+    <tr><th scope="row">1983</th><td>5002.352</td><td>5027.803</td><td>5009.028</td><td>4978.874</td><td>4992.870</td><td>5006.686</td><td>4995.802</td><td>4985.561</td><td>4984.286</td><td>5000.353</td><td>5002.772</td><td>4989.359</td></tr>
+    <tr><th scope="row">1984</th><td>5030.011</td><td>4985.272</td><td>4999.767</td><td>5020.035</td><td>4974.976</td><td>5043.349</td><td>4966.228</td><td>5003.027</td><td>4976.126</td><td>5030.512</td><td>4983.901</td><td>5016.143</td></tr>
+    <tr><th scope="row">1985</th><td>4966.177</td><td>5044.241</td><td>4999.514</td><td>4995.445</td><td>4992.818</td><td>4985.386</td><td>5009.778</td><td>4980.818</td><td>4979.339</td><td>4983.166</td><td>5010.162</td><td>5000.873</td></tr>
+    <tr><th scope="row">1986</th><td>4979.712</td><td>4973.113</td><td>4994.088</td><td>5004.415</td><td>5024.681</td><td>5001.001</td><td>5019.175</td><td>4964.417</td><td>4994.112</td><td>4971.170</td><td>5021.870</td><td>5015.610</td></tr>
+    <tr><th scope="row">1987</th><td>4996.487</td><td>4984.219</td><td>4967.279</td><td>5008.634</td><td>5032.191</td><td>4992.309</td><td>5005.209</td><td>4999.648</td><td>5025.737</td><td>4996.766</td><td>4985.408</td><td>4994.681</td></tr>
+    <tr><th scope="row">1988</th><td>5013.342</td><td>5027.108</td><td>5012.320</td><td>5010.116</td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> cycle <span class="co"># 주기알려줌</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A Time Series: 9 × 12</caption>
+<thead>
+    <tr><th></th><th scope="col">Jan</th><th scope="col">Feb</th><th scope="col">Mar</th><th scope="col">Apr</th><th scope="col">May</th><th scope="col">Jun</th><th scope="col">Jul</th><th scope="col">Aug</th><th scope="col">Sep</th><th scope="col">Oct</th><th scope="col">Nov</th><th scope="col">Dec</th></tr>
+</thead>
+<tbody>
+    <tr><th scope="row">1980</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1981</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1982</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1983</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1984</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1985</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1986</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1987</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td><td>10</td><td>11</td><td>12</td></tr>
+    <tr><th scope="row">1988</th><td> 1</td><td> 2</td><td> 3</td><td> 4</td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A Time Series: 9 × 12</caption>
+<thead>
+    <tr><th></th><th scope="col">Jan</th><th scope="col">Feb</th><th scope="col">Mar</th><th scope="col">Apr</th><th scope="col">May</th><th scope="col">Jun</th><th scope="col">Jul</th><th scope="col">Aug</th><th scope="col">Sep</th><th scope="col">Oct</th><th scope="col">Nov</th><th scope="col">Dec</th></tr>
+</thead>
+<tbody>
+    <tr><th scope="row">1980</th><td>1980.000</td><td>1980.083</td><td>1980.167</td><td>1980.250</td><td>1980.333</td><td>1980.417</td><td>1980.500</td><td>1980.583</td><td>1980.667</td><td>1980.750</td><td>1980.833</td><td>1980.917</td></tr>
+    <tr><th scope="row">1981</th><td>1981.000</td><td>1981.083</td><td>1981.167</td><td>1981.250</td><td>1981.333</td><td>1981.417</td><td>1981.500</td><td>1981.583</td><td>1981.667</td><td>1981.750</td><td>1981.833</td><td>1981.917</td></tr>
+    <tr><th scope="row">1982</th><td>1982.000</td><td>1982.083</td><td>1982.167</td><td>1982.250</td><td>1982.333</td><td>1982.417</td><td>1982.500</td><td>1982.583</td><td>1982.667</td><td>1982.750</td><td>1982.833</td><td>1982.917</td></tr>
+    <tr><th scope="row">1983</th><td>1983.000</td><td>1983.083</td><td>1983.167</td><td>1983.250</td><td>1983.333</td><td>1983.417</td><td>1983.500</td><td>1983.583</td><td>1983.667</td><td>1983.750</td><td>1983.833</td><td>1983.917</td></tr>
+    <tr><th scope="row">1984</th><td>1984.000</td><td>1984.083</td><td>1984.167</td><td>1984.250</td><td>1984.333</td><td>1984.417</td><td>1984.500</td><td>1984.583</td><td>1984.667</td><td>1984.750</td><td>1984.833</td><td>1984.917</td></tr>
+    <tr><th scope="row">1985</th><td>1985.000</td><td>1985.083</td><td>1985.167</td><td>1985.250</td><td>1985.333</td><td>1985.417</td><td>1985.500</td><td>1985.583</td><td>1985.667</td><td>1985.750</td><td>1985.833</td><td>1985.917</td></tr>
+    <tr><th scope="row">1986</th><td>1986.000</td><td>1986.083</td><td>1986.167</td><td>1986.250</td><td>1986.333</td><td>1986.417</td><td>1986.500</td><td>1986.583</td><td>1986.667</td><td>1986.750</td><td>1986.833</td><td>1986.917</td></tr>
+    <tr><th scope="row">1987</th><td>1987.000</td><td>1987.083</td><td>1987.167</td><td>1987.250</td><td>1987.333</td><td>1987.417</td><td>1987.500</td><td>1987.583</td><td>1987.667</td><td>1987.750</td><td>1987.833</td><td>1987.917</td></tr>
+    <tr><th scope="row">1988</th><td>1988.000</td><td>1988.083</td><td>1988.167</td><td>1988.250</td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td><td>        </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> frequency</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+12
+</div>
+</div>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> start</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1980</li><li>1</li></ol>
+</div>
+</div>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1988</li><li>4</li></ol>
+</div>
+</div>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="sc">%&gt;%</span> tsp <span class="co"># 시작, 끝, 주기 알려줌</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>1980</li><li>1988.25</li><li>12</li></ol>
+</div>
+</div>
+<ul>
+<li>ts장점 : 기본적으로 linetype = l로 해줌, 부가 옵션들이 더 나옴</li>
+</ul>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(z.ts, <span class="at">xlab =</span> <span class="st">"date"</span>, <span class="at">ylab =</span> <span class="st">"zt"</span>,</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">main =</span><span class="st">"irregular elements"</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">5000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> 예제)</p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>a_ <span class="ot">&lt;-</span> <span class="st">"1980/1/1"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>a_ <span class="sc">%&gt;%</span> class</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">as.Date</span>(a_) <span class="sc">%&gt;%</span> class</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+'character'
+</div>
+<div class="cell-output cell-output-display">
+'Date'
+</div>
+</div>
+<ul>
+<li>보이기에 비슷해 보이는데 명확하게 분류되는게 작동면에서 유리</li>
+</ul>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">Time =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1980/1/1"</span>),</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">by =</span> <span class="st">"month"</span>,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">length.out =</span> <span class="dv">100</span>),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">z =</span> z)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A data.table: 6 × 2</caption>
+<thead>
+    <tr><th scope="col">Time</th><th scope="col">z</th></tr>
+    <tr><th scope="col">&lt;date&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1980-01-01</td><td>5008.383</td></tr>
+    <tr><td>1980-02-01</td><td>4970.883</td></tr>
+    <tr><td>1980-03-01</td><td>4970.882</td></tr>
+    <tr><td>1980-04-01</td><td>4979.687</td></tr>
+    <tr><td>1980-05-01</td><td>4989.338</td></tr>
+    <tr><td>1980-06-01</td><td>4986.328</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(Time, z)) <span class="sc">+</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">5000</span>, <span class="at">col =</span> <span class="st">'grey80'</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="sc">+</span> <span class="co"># 선 긋기</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">"irregular elements"</span>) <span class="sc">+</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y"</span>) <span class="sc">+</span> <span class="co"># 연 단위로 보이게 만들기</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>), <span class="co"># 글씨 크기 조절 옵션</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title =</span> <span class="fu">element_blank</span>()) <span class="co"># x, y label 제거</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="추세성분" class="level2">
+<h2 class="anchored" data-anchor-id="추세성분">추세성분</h2>
+<ul>
+<li>하는 방법 : 일단 추세를 하나 그리고 노이즈를 더해준다.</li>
+</ul>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">100</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>n</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fl">0.5</span><span class="sc">*</span>t <span class="co"># 추세</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fl">0.5</span><span class="sc">*</span>t <span class="sc">+</span> <span class="fu">rnorm</span>(n) <span class="co"># 추세 + 오차</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="at">type =</span> <span class="st">'l'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-21-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> 기본 추세 + 노이즈</p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z, <span class="at">type =</span> <span class="st">'l'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> 노이즈 추가, 연도, 주기, 변경</p>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1980</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>x.ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(x, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1980</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>-</code> 추세선 + (추세 + 노이즈)선</p>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(z.ts, x.ts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-24-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> 추세선, 추세 + 오차선 색 다르게해서 그리기</p>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(z.ts, x.ts,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="fu">c</span>(<span class="st">'blue'</span>, <span class="st">'red'</span>),</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">lty =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">"date"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">"zt"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">"trend component"</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="co"># 범례 추가</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"series"</span>, <span class="st">"trend"</span>),</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-25-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="계절성분" class="level2">
+<h2 class="anchored" data-anchor-id="계절성분">계절성분</h2>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">120</span> <span class="co"># 계절성분 120개</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>n</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n,<span class="dv">0</span>,<span class="dv">1</span>) <span class="co"># 오차</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(a, <span class="at">type =</span> <span class="st">'l'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-27-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>앞에 0.8곱해주면 분산을 줄여줌(오차를 줄이니까)<br> 10더한 것은 평균 10증가 -&gt; 불규칙성분만들기</li>
+</ul>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">10</span> <span class="sc">+</span> <span class="fl">0.8</span><span class="sc">*</span>a, <span class="at">type =</span> <span class="st">'l'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> 주기가 있는 사인함수</p>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">sin</span>((<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>t)<span class="sc">/</span><span class="dv">12</span>),<span class="at">type =</span> <span class="st">'l'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-29-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p><code>-</code> z는 위의 sin함수에 노이즈가 더해진 형태</p>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="fu">sin</span>((<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>t)<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fl">0.8</span><span class="sc">*</span>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>sin함수에 오차가 섞여서 계절성을 띄는 성분이 됨.</li>
+</ul>
+<div class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>z.ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(z,</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1985</span>, <span class="dv">1</span>),</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">frequency =</span> <span class="dv">12</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z.ts,</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"date"</span>,</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">"zt"</span>,</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"seasonal component"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-31-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="주기성분을-갖는-시계열" class="level2">
+<h2 class="anchored" data-anchor-id="주기성분을-갖는-시계열">주기성분을 갖는 시계열</h2>
+<section id="삼각함수" class="level3">
+<h3 class="anchored" data-anchor-id="삼각함수">삼각함수</h3>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="fl">0.01</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'cos::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-33-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-33-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>sin, cos 두 함수 더한 함수<br> 아래는 각각 weight를 다르게 해 반영한 함수</li>
+</ul>
+<div class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin+cos::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="fl">1.5</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fl">1.5</span><span class="sc">*</span><span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s) <span class="sc">+</span> <span class="fl">0.7</span><span class="sc">*</span><span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin+cos::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="fl">1.5</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-34-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-34-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<section id="주기를-바꿔가면서" class="level4">
+<h4 class="anchored" data-anchor-id="주기를-바꿔가면서">주기를 바꿔가면서</h4>
+<div class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-36-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-36-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>주기는 6그대로인데 weight를 다르게하면<br> 또 다른 다양한 형태가 나온다.</li>
+</ul>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>) </span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="dv">2</span><span class="sc">*</span><span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fl">0.8</span><span class="sc">*</span><span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">48</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-37-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-37-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<section id="주기-3개-만들고-3개-더해서-그리기" class="level5">
+<h5 class="anchored" data-anchor-id="주기-3개-만들고-3개-더해서-그리기">주기 3개 만들고 3개 더해서 그리기</h5>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span>s), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin::'</span>, <span class="st">"frequncy="</span>, s))</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin + sin + sin::'</span>, <span class="st">"frequncy="</span>, <span class="dv">12</span>))</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> s), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-38-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-38-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-38-output-3.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-38-output-4.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>여러개 섞으면서 그리기<br> 마지막 거는 추세까지 섞임</li>
+</ul>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>), <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">'sin + sin + sin::'</span>, <span class="st">"frequncy="</span>, <span class="dv">12</span>))</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> <span class="dv">12</span>), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, y, <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="st">"s+s+s+c+c+c : frequncy=, 12"</span>)</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> <span class="dv">12</span>), <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>y2 <span class="ot">&lt;-</span> x<span class="sc">*</span><span class="fl">0.5</span> <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span><span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">12</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">6</span>) <span class="sc">+</span> <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>x<span class="sc">/</span><span class="dv">3</span>)</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, y2, <span class="at">type =</span> <span class="st">'l'</span>, <span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">main =</span> <span class="st">"s+s+s+c+c+c frequency=12"</span>)</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">a =</span> <span class="dv">0</span>, <span class="at">b =</span> <span class="fl">0.5</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">24</span>, <span class="at">by =</span> <span class="dv">12</span>), <span class="at">lty =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-39-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-39-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-39-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>n</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>a1 <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fl">0.8</span> <span class="co"># 진폭</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>a2 <span class="ot">&lt;-</span> <span class="fl">1.4</span> <span class="co"># 진폭</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>phi1 <span class="ot">&lt;-</span> pi<span class="sc">/</span><span class="dv">3</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>phi2 <span class="ot">&lt;-</span> <span class="dv">3</span><span class="sc">*</span>pi<span class="sc">/</span><span class="dv">4</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>first <span class="ot">&lt;-</span> a1<span class="sc">*</span><span class="fu">sin</span>(pi<span class="sc">*</span>t<span class="sc">/</span><span class="dv">6</span> <span class="sc">+</span> phi1) <span class="co"># 첫 번째 주기성분(주기 6)</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>second <span class="ot">&lt;-</span> a2<span class="sc">*</span><span class="fu">sin</span>(pi<span class="sc">*</span>t<span class="sc">/</span><span class="dv">3</span> <span class="sc">+</span> phi2) <span class="co"># 두 번째 주기성분(주기 3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">t =</span> t,</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">first =</span> first, <span class="co"># 첫 번째 주기 성분</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">second =</span> second,<span class="co"># 두 번째 주기 성분</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">z =</span> first <span class="sc">+</span> second)<span class="co"># 그 두 개 더한 성분</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dt, <span class="fu">aes</span>(t, first)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ylim</span>(<span class="sc">-</span><span class="fl">2.5</span>, <span class="dv">2</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">12</span>)) <span class="sc">+</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dt, <span class="fu">aes</span>(t, second)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ylim</span>(<span class="sc">-</span><span class="fl">2.5</span>, <span class="dv">2</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">12</span>)) <span class="sc">+</span></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dt, <span class="fu">aes</span>(t, z)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ylim</span>(<span class="sc">-</span><span class="fl">2.5</span>, <span class="dv">2</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">100</span>, <span class="at">by =</span> <span class="dv">12</span>)) <span class="sc">+</span></span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>p1</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>p2</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>p3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-42-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-42-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-42-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(p1, p2, p3, <span class="at">nrow =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-43-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="실제-데이터-활용" class="level2">
+<h2 class="anchored" data-anchor-id="실제-데이터-활용">실제 데이터 활용</h2>
+<section id="백화점-매출액---지시함수" class="level3">
+<h3 class="anchored" data-anchor-id="백화점-매출액---지시함수">백화점 매출액 - 지시함수</h3>
+<div class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"depart.txt"</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>dep <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">frequency =</span> <span class="dv">12</span>, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1984</span>, <span class="dv">1</span>)) <span class="co"># TimeSeries로 바꿔도되고 안해도 되는데 여기서는 함</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dep)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-44-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>매출액이 증가하는 추세가 보임<br> 계졀성도 있어보임(특히 1년주기)<br> 또 점점 분산이 증가하는 이분산성을 보이는데 따라서 로그 변환을 해준다.</li>
+</ul>
+<div class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1984-01-01"</span>),</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">by =</span> <span class="st">'month'</span>, <span class="at">length.out =</span> <span class="fu">length</span>(z)),</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">z =</span> z</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>tmp.data[, lndep <span class="sc">:</span><span class="er">=</span> <span class="fu">log</span>(z)] <span class="co"># 로그변환</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>tmp.data[, y <span class="sc">:</span><span class="er">=</span> <span class="fu">as.factor</span>(<span class="fu">as.integer</span>(<span class="fu">cycle</span>(dep)))] <span class="co"># factor씌우는 게 그냥 넣으면 그대로 안 받아들여져서</span></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>tmp.data[, trend <span class="sc">:</span><span class="er">=</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z)]</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A data.table: 6 × 5</caption>
+<thead>
+    <tr><th scope="col">day</th><th scope="col">z</th><th scope="col">lndep</th><th scope="col">y</th><th scope="col">trend</th></tr>
+    <tr><th scope="col">&lt;date&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1984-01-01</td><td>423</td><td>6.047372</td><td>1</td><td>1</td></tr>
+    <tr><td>1984-02-01</td><td>458</td><td>6.126869</td><td>2</td><td>2</td></tr>
+    <tr><td>1984-03-01</td><td>607</td><td>6.408529</td><td>3</td><td>3</td></tr>
+    <tr><td>1984-04-01</td><td>564</td><td>6.335054</td><td>4</td><td>4</td></tr>
+    <tr><td>1984-05-01</td><td>536</td><td>6.284134</td><td>5</td><td>5</td></tr>
+    <tr><td>1984-06-01</td><td>536</td><td>6.284134</td><td>6</td><td>6</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, z)) <span class="sc">+</span> </span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"monthly department store sales TimeSeries plot"</span>) <span class="sc">+</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, lndep)) <span class="sc">+</span> </span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"monthly department store sales TimeSeries plot after log transformation"</span>) <span class="sc">+</span></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>로그 변환 이후 분산 폭이 줄어듦을 볼 수 있다.</li>
+</ul>
+<div class="cell" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>p1</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>p2 <span class="co"># 로그변환한 거</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-47-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-47-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(p1, p2, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-48-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<section id="모형적합선형회귀" class="level4">
+<h4 class="anchored" data-anchor-id="모형적합선형회귀">모형적합(선형회귀)</h4>
+<ol type="1">
+<li>지시함수(Indicater)를 사용하고 싶다면, <span class="math inline">\(\beta_0\)</span> = 0 or <span class="math inline">\(\sum \beta_i\)</span> = 0 or <span class="math inline">\(\beta_1\)</span> = 0 셋 중 하나를 가정해야함.<br> 아래는 <span class="math inline">\(\beta_0\)</span> = 0 가정</li>
+</ol>
+<div class="cell" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A data.table: 6 × 5</caption>
+<thead>
+    <tr><th scope="col">day</th><th scope="col">z</th><th scope="col">lndep</th><th scope="col">y</th><th scope="col">trend</th></tr>
+    <tr><th scope="col">&lt;date&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1984-01-01</td><td>423</td><td>6.047372</td><td>1</td><td>1</td></tr>
+    <tr><td>1984-02-01</td><td>458</td><td>6.126869</td><td>2</td><td>2</td></tr>
+    <tr><td>1984-03-01</td><td>607</td><td>6.408529</td><td>3</td><td>3</td></tr>
+    <tr><td>1984-04-01</td><td>564</td><td>6.335054</td><td>4</td><td>4</td></tr>
+    <tr><td>1984-05-01</td><td>536</td><td>6.284134</td><td>5</td><td>5</td></tr>
+    <tr><td>1984-06-01</td><td>536</td><td>6.284134</td><td>6</td><td>6</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="51">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> <span class="fu">lm</span>(lndep <span class="sc">~</span> <span class="dv">0</span> <span class="sc">+</span> trend <span class="sc">+</span> y, <span class="at">data =</span> tmp.data)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+Call:
+lm(formula = lndep ~ 0 + trend + y, data = tmp.data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.038679 -0.018689 -0.001468  0.015185  0.057288 
+
+Coefficients:
+       Estimate Std. Error t value Pr(&gt;|t|)    
+trend 0.0106603  0.0001925   55.39   &lt;2e-16 ***
+y1    6.0641904  0.0122952  493.21   &lt;2e-16 ***
+y2    6.0807995  0.0123718  491.50   &lt;2e-16 ***
+y3    6.3811183  0.0124509  512.50   &lt;2e-16 ***
+y4    6.2953455  0.0125325  502.32   &lt;2e-16 ***
+y5    6.2132392  0.0126164  492.47   &lt;2e-16 ***
+y6    6.2197771  0.0127027  489.64   &lt;2e-16 ***
+y7    6.5885065  0.0127914  515.08   &lt;2e-16 ***
+y8    6.1842831  0.0128823  480.06   &lt;2e-16 ***
+y9    6.1001148  0.0129754  470.13   &lt;2e-16 ***
+y10   6.3334505  0.0130707  484.56   &lt;2e-16 ***
+y11   6.3417116  0.0131681  481.60   &lt;2e-16 ***
+y12   7.1104816  0.0132676  535.93   &lt;2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0253 on 47 degrees of freedom
+Multiple R-squared:      1, Adjusted R-squared:      1 
+F-statistic: 3.199e+05 on 13 and 47 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<ul>
+<li>해석 : coefficients에서 trend 보면 매월 0.0106603씩 증가함을 볼 수 있음.<br> 로그 취한 것이기에 6.0641904, 6.0807995등은 각각 로그매출액의 1월의 평균, 2월의 평균을 의미(쭉쭉 12월까지)<br> 미국은 블랙 프라이데이등으로 인해 12월 매출이 높은 것을 볼 수 있음, 또 높은 구간은 여름(7월)이고 이는 그래프에서도 나타남.</li>
+</ul>
+<ol start="2" type="1">
+<li><span class="math inline">\(\beta_1\)</span> = 0 가정<br> 위 처럼 0 안넣으면 자동으로 “<span class="math inline">\(\beta_1\)</span> = 0 가정” 들어간다.</li>
+</ol>
+<div class="cell" data-execution_count="52">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>reg2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(lndep <span class="sc">~</span> trend <span class="sc">+</span> y, <span class="at">data =</span> tmp.data)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg2)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(tmp.data<span class="sc">$</span>y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+Call:
+lm(formula = lndep ~ trend + y, data = tmp.data)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.038679 -0.018689 -0.001468  0.015185  0.057288 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 6.0641904  0.0122952 493.215  &lt; 2e-16 ***
+trend       0.0106603  0.0001925  55.388  &lt; 2e-16 ***
+y2          0.0166091  0.0160024   1.038   0.3046    
+y3          0.3169279  0.0160059  19.801  &lt; 2e-16 ***
+y4          0.2311551  0.0160117  14.437  &lt; 2e-16 ***
+y5          0.1490488  0.0160198   9.304 3.12e-12 ***
+y6          0.1555867  0.0160302   9.706 8.32e-13 ***
+y7          0.5243161  0.0160429  32.682  &lt; 2e-16 ***
+y8          0.1200927  0.0160579   7.479 1.54e-09 ***
+y9          0.0359244  0.0160752   2.235   0.0302 *  
+y10         0.2692601  0.0160948  16.730  &lt; 2e-16 ***
+y11         0.2775212  0.0161166  17.220  &lt; 2e-16 ***
+y12         1.0462912  0.0161407  64.823  &lt; 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0253 on 47 degrees of freedom
+Multiple R-squared:  0.9959,    Adjusted R-squared:  0.9948 
+F-statistic: 949.2 on 12 and 47 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A matrix: 12 × 11 of type dbl</caption>
+<thead>
+    <tr><th></th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th><th scope="col">10</th><th scope="col">11</th><th scope="col">12</th></tr>
+</thead>
+<tbody>
+    <tr><th scope="row">1</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">2</th><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">3</th><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">4</th><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">5</th><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">6</th><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">7</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">8</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">9</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">10</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><th scope="row">11</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+    <tr><th scope="row">12</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>해석 : 따라서 coefficients 보면 y1없는데 <span class="math inline">\(\beta_1\)</span> = 0이라 여기 안 나온거임, 그래서 여기서는 Intercept값이 y1(1월)값임(즉, Intercept값이 <span class="math inline">\(\beta_0\)</span>값).<br> 해석하면 1월이 기준점이 되는거기에 y2는 2월과 1월의 차이를 의미, y3는 3월과 1월의 차이<br> y2 맨 뒤 보면 별표3개 안 붙어 있는데 이거는 밑에 신뢰성 유의하지 않다는 의미(0.001만큼), 이유가 1월과 2월의 차이는 별로 의미없다는 것이라서<br> contrasts를 보면 1월이 다 0인 것을 볼 수 있는데, 이를 보아 1월이 기준점임을 알 수 있음.</li>
+</ul>
+<ol start="3" type="1">
+<li><span class="math inline">\(\sum \beta_i\)</span> = 0 가정</li>
+</ol>
+<div class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>reg3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(lndep <span class="sc">~</span> trend <span class="sc">+</span> y, <span class="at">data =</span> tmp.data, <span class="at">contrasts =</span> <span class="fu">list</span>(<span class="at">y =</span> <span class="st">"contr.sum"</span>))</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+Call:
+lm(formula = lndep ~ trend + y, data = tmp.data, contrasts = list(y = "contr.sum"))
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.038679 -0.018689 -0.001468  0.015185  0.057288 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  6.3260849  0.0067177 941.703  &lt; 2e-16 ***
+trend        0.0106603  0.0001925  55.388  &lt; 2e-16 ***
+y1          -0.2618944  0.0108845 -24.061  &lt; 2e-16 ***
+y2          -0.2452853  0.0108675 -22.571  &lt; 2e-16 ***
+y3           0.0550335  0.0108538   5.070 6.63e-06 ***
+y4          -0.0307393  0.0108436  -2.835  0.00674 ** 
+y5          -0.1128456  0.0108368 -10.413 8.53e-14 ***
+y6          -0.1063078  0.0108334  -9.813 5.87e-13 ***
+y7           0.2624217  0.0108334  24.223  &lt; 2e-16 ***
+y8          -0.1418018  0.0108368 -13.085  &lt; 2e-16 ***
+y9          -0.2259700  0.0108436 -20.839  &lt; 2e-16 ***
+y10          0.0073656  0.0108538   0.679  0.50071    
+y11          0.0156268  0.0108675   1.438  0.15708    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0253 on 47 degrees of freedom
+Multiple R-squared:  0.9959,    Adjusted R-squared:  0.9948 
+F-statistic: 949.2 on 12 and 47 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<ul>
+<li>해석 : 이번에는 y12가 빠졌는데, 위에서 <span class="math inline">\(\sum \beta_i\)</span> = 0라고 했는데 이는 자연스레 <span class="math inline">\(\beta_1 + \beta_2 + \beta_3 ... + \beta_{12}\)</span> = 0임을 의미한다.<br> 다시 말하면, <span class="math inline">\(\beta_{12} = -(\beta_1 + \beta_2 + \beta_3 ... \beta_{11})\)</span>라는 말이 된다.<br> Intercept(6.3260849) 전체 평균을 의미(월별 상관없이)<br> 즉, 1월은 전체 평균(6.3260849) 대비 -0.2618944한 거 만큼 의미<br> 12월은 안나왔는데 12월은 위의 식처럼 평균대비 1~11을 다 빼면 나온다.<br> 즉 ,0.7843966 + 6.3260849 = 7.1104815 -&gt; 12월 거</li>
+</ul>
+<p><code>-</code> coef 1~11 더한 거</p>
+<div class="cell" data-execution_count="54">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.2618944</span>,<span class="sc">-</span><span class="fl">0.2452853</span>,<span class="fl">0.0550335</span>,<span class="sc">-</span><span class="fl">0.0307393</span>,<span class="sc">-</span><span class="fl">0.1128456</span>,<span class="sc">-</span><span class="fl">0.1063078</span>, <span class="fl">0.2624217</span>,<span class="sc">-</span><span class="fl">0.1418018</span> ,<span class="sc">-</span><span class="fl">0.2259700</span>,<span class="fl">0.0073656</span>,<span class="fl">0.0156268</span>) <span class="sc">%&gt;%</span> sum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+-0.7843966
+</div>
+</div>
+<div class="cell" data-execution_count="55">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>tmp.data[, fitted_lndep <span class="sc">:</span><span class="er">=</span> <span class="fu">fitted</span>(reg)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="56">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, lndep)) <span class="sc">+</span> </span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(day, fitted_lndep), <span class="at">col =</span> <span class="st">'orange'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"department sales after log transformation vs estimated value"</span>) <span class="sc">+</span></span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-55-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>파랑색이 원래, 노랑색이 적합된 값 의미</li>
+</ul>
+</section>
+<section id="잔차그림" class="level4">
+<h4 class="anchored" data-anchor-id="잔차그림">잔차그림</h4>
+<div class="cell" data-execution_count="57">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>tmp.data[, res <span class="sc">:</span><span class="er">=</span> <span class="fu">resid</span>(reg)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="58">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, res)) <span class="sc">+</span> </span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Time series plot of residuals"</span>) <span class="sc">+</span></span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-57-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>그림보면 양의 상관관계가 있어보임.<br> 그래서 D.W test해보면</li>
+</ul>
+<div class="cell" data-execution_count="60">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(reg, <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+    Durbin-Watson test
+
+data:  reg
+DW = 0.82642, p-value = 4.781e-06
+alternative hypothesis: true autocorrelation is not 0</code></pre>
+</div>
+</div>
+<ul>
+<li>결과 독립성 확보 실패, 정확하게 1차 자기 상관관계가 있다. 특히 1차 양의 자기상관관계</li>
+</ul>
+</section>
+</section>
+<section id="백화점-매출액---삼각함수" class="level3">
+<h3 class="anchored" data-anchor-id="백화점-매출액---삼각함수">백화점 매출액 - 삼각함수</h3>
+<div class="cell" data-execution_count="61">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>tmp.data_sub <span class="ot">&lt;-</span> tmp.data[,.(lndep, trend)]</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>tmp.data_sub <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A data.table: 6 × 2</caption>
+<thead>
+    <tr><th scope="col">lndep</th><th scope="col">trend</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>6.047372</td><td>1</td></tr>
+    <tr><td>6.126869</td><td>2</td></tr>
+    <tr><td>6.408529</td><td>3</td></tr>
+    <tr><td>6.335054</td><td>4</td></tr>
+    <tr><td>6.284134</td><td>5</td></tr>
+    <tr><td>6.284134</td><td>6</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><code>-</code> 데이터 생성</p>
+<ul>
+<li>아래 12, 6, 4 .. 은 주기 의미</li>
+</ul>
+<div class="cell" data-execution_count="62">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>tmp.data_sub <span class="ot">&lt;-</span> <span class="fu">cbind</span>(tmp.data_sub,</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>                      tmp.data_sub[, <span class="fu">lapply</span>(<span class="fu">as.list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>),</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>                                            <span class="cf">function</span>(i) <span class="fu">sin</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>i<span class="sc">/</span><span class="dv">12</span><span class="sc">*</span>trend))])</span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>                                            </span>
+<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tmp.data_sub)[<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)] <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"sin"</span>, <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="fl">2.4</span>), <span class="at">sep =</span> <span class="st">"_"</span>)</span>
+<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>tmp.data_sub <span class="ot">&lt;-</span> <span class="fu">cbind</span>(tmp.data_sub,</span>
+<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a>                      tmp.data_sub[, <span class="fu">lapply</span>(<span class="fu">as.list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>),</span>
+<span id="cb63-9"><a href="#cb63-9" aria-hidden="true" tabindex="-1"></a>                                            <span class="cf">function</span>(i) <span class="fu">cos</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>i<span class="sc">/</span><span class="dv">12</span><span class="sc">*</span>trend))])</span>
+<span id="cb63-10"><a href="#cb63-10" aria-hidden="true" tabindex="-1"></a>                                            </span>
+<span id="cb63-11"><a href="#cb63-11" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tmp.data_sub)[<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>)] <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"cos"</span>, <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="fl">2.4</span>), <span class="at">sep =</span> <span class="st">"_"</span>)</span>
+<span id="cb63-12"><a href="#cb63-12" aria-hidden="true" tabindex="-1"></a>                                            </span>
+<span id="cb63-13"><a href="#cb63-13" aria-hidden="true" tabindex="-1"></a>tmp.data_sub <span class="sc">%&gt;%</span> head                                            </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A data.table: 6 × 12</caption>
+<thead>
+    <tr><th scope="col">lndep</th><th scope="col">trend</th><th scope="col">sin_12</th><th scope="col">sin_6</th><th scope="col">sin_4</th><th scope="col">sin_3</th><th scope="col">sin_2.4</th><th scope="col">cos_12</th><th scope="col">cos_6</th><th scope="col">cos_4</th><th scope="col">cos_3</th><th scope="col">cos_2.4</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>6.047372</td><td>1</td><td>5.000000e-01</td><td> 8.660254e-01</td><td> 1.000000e+00</td><td> 8.660254e-01</td><td> 5.000000e-01</td><td> 8.660254e-01</td><td> 0.5</td><td> 6.123234e-17</td><td>-0.5</td><td>-8.660254e-01</td></tr>
+    <tr><td>6.126869</td><td>2</td><td>8.660254e-01</td><td> 8.660254e-01</td><td> 1.224647e-16</td><td>-8.660254e-01</td><td>-8.660254e-01</td><td> 5.000000e-01</td><td>-0.5</td><td>-1.000000e+00</td><td>-0.5</td><td> 5.000000e-01</td></tr>
+    <tr><td>6.408529</td><td>3</td><td>1.000000e+00</td><td> 1.224647e-16</td><td>-1.000000e+00</td><td>-2.449294e-16</td><td> 1.000000e+00</td><td> 6.123234e-17</td><td>-1.0</td><td>-1.836970e-16</td><td> 1.0</td><td> 3.061617e-16</td></tr>
+    <tr><td>6.335054</td><td>4</td><td>8.660254e-01</td><td>-8.660254e-01</td><td>-2.449294e-16</td><td> 8.660254e-01</td><td>-8.660254e-01</td><td>-5.000000e-01</td><td>-0.5</td><td> 1.000000e+00</td><td>-0.5</td><td>-5.000000e-01</td></tr>
+    <tr><td>6.284134</td><td>5</td><td>5.000000e-01</td><td>-8.660254e-01</td><td> 1.000000e+00</td><td>-8.660254e-01</td><td> 5.000000e-01</td><td>-8.660254e-01</td><td> 0.5</td><td> 3.061617e-16</td><td>-0.5</td><td> 8.660254e-01</td></tr>
+    <tr><td>6.284134</td><td>6</td><td>1.224647e-16</td><td>-2.449294e-16</td><td> 3.673940e-16</td><td>-4.898587e-16</td><td> 6.123234e-16</td><td>-1.000000e+00</td><td> 1.0</td><td>-1.000000e+00</td><td> 1.0</td><td>-1.000000e+00</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="모형적합" class="level4">
+<h4 class="anchored" data-anchor-id="모형적합">모형적합</h4>
+<div class="cell" data-execution_count="63">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>reg_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(lndep <span class="sc">~</span>., <span class="at">data =</span> tmp.data_sub)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+Call:
+lm(formula = lndep ~ ., data = tmp.data_sub)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.08232 -0.04855  0.00972  0.04645  0.08527 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  6.3237250  0.0148062 427.100  &lt; 2e-16 ***
+trend        0.0107376  0.0004242  25.315  &lt; 2e-16 ***
+sin_12      -0.0277129  0.0103066  -2.689 0.009829 ** 
+sin_6       -0.0382551  0.0102107  -3.747 0.000481 ***
+sin_4       -0.1555546  0.0101931 -15.261  &lt; 2e-16 ***
+sin_3        0.0666506  0.0101872   6.543 3.70e-08 ***
+sin_2.4      0.0128922  0.0101849   1.266 0.211691    
+cos_12       0.0857900  0.0101931   8.416 5.21e-11 ***
+cos_6        0.1675743  0.0101931  16.440  &lt; 2e-16 ***
+cos_4        0.1592698  0.0101931  15.625  &lt; 2e-16 ***
+cos_3        0.1267107  0.0101931  12.431  &lt; 2e-16 ***
+cos_2.4      0.2000603  0.0101931  19.627  &lt; 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.05578 on 48 degrees of freedom
+Multiple R-squared:  0.9796,    Adjusted R-squared:  0.9749 
+F-statistic: 209.5 on 11 and 48 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<ul>
+<li>해석 : sin_2.4 하나 유의하지 않다고 나옴(별표)<br> 원래 sin, cos함수는 1부터 -1까지 갖는데 Estimate 나온 숫자만큼 진폭을 줄여주거나 늘려줌.</li>
+</ul>
+<div class="cell" data-execution_count="64">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>tmp.data_sub[, day <span class="sc">:</span><span class="er">=</span> tmp.data<span class="sc">$</span>day]</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>tmp.data_sub[, fitted_lndep <span class="sc">:</span><span class="er">=</span> <span class="fu">fitted</span>(reg_2)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data_sub, <span class="fu">aes</span>(day, lndep)) <span class="sc">+</span> </span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(day, fitted_lndep), <span class="at">col =</span> <span class="st">'orange'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-63-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="잔차분석" class="level4">
+<h4 class="anchored" data-anchor-id="잔차분석">잔차분석</h4>
+<div class="cell" data-execution_count="66">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>tmp.data_sub[, res <span class="sc">:</span><span class="er">=</span> <span class="fu">resid</span>(reg_2)]</span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data_sub, <span class="fu">aes</span>(day, res)) <span class="sc">+</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb68-5"><a href="#cb68-5" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_date</span>(<span class="at">date_breaks =</span> <span class="st">"1 year"</span>, <span class="at">date_labels =</span> <span class="st">"%Y-%m"</span>) <span class="sc">+</span></span>
+<span id="cb68-6"><a href="#cb68-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb68-7"><a href="#cb68-7" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2022-10-02-시계열자료분석-학습1_files/figure-html/cell-64-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>해석 : 1차 음의 자기상관관계가 있다.<br> 다른 것보다 등분산성의 문제가 있어보인다.(그저 보기에) = 독립성문제</li>
+</ul>
+</section>
+<section id="dw-test" class="level4">
+<h4 class="anchored" data-anchor-id="dw-test">DW test</h4>
+<div class="cell" data-execution_count="67">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(reg_2)</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(reg_2, <span class="at">alternative =</span> <span class="st">"two.side"</span>)</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(reg_2, <span class="at">alternative =</span> <span class="st">"less"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>
+    Durbin-Watson test
+
+data:  reg_2
+DW = 3.2703, p-value = 1
+alternative hypothesis: true autocorrelation is greater than 0</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>
+    Durbin-Watson test
+
+data:  reg_2
+DW = 3.2703, p-value = 1.269e-06
+alternative hypothesis: true autocorrelation is not 0</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>
+    Durbin-Watson test
+
+data:  reg_2
+DW = 3.2703, p-value = 6.346e-07
+alternative hypothesis: true autocorrelation is less than 0</code></pre>
+</div>
+</div>
+<ul>
+<li>alternative 안 쓰면 default는 greater다<br> 첫 번째 4에가까운 값이 나오면 two.side, less 둘 다 해보는게 좋음.<br> two.side 결과보면 0이 아니다. -&gt; 기각<br> less 결과보면 ’음의 상관관계가 있다’의 결과 p-value가 매우 작아 기각할 수 있다.</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
