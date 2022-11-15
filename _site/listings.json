@@ -3,8 +3,6 @@
     "listing": "/index.html",
     "items": [
       "/posts/regression/2022-08-10_회귀분석.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
       "/posts/time-series/2022-10-02-시계열자료분석-학습1.html"
     ]
   }
