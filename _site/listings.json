@@ -2,12 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/regression/2022-08-10_회귀분석.html",
       "/posts/time-series/2022-10-14-시계열자료분석-학습5.html",
       "/posts/time-series/2022-10-12-시계열자료분석-학습4.html",
       "/posts/time-series/2022-10-08-시계열자료분석-학습3.html",
       "/posts/time-series/2022-10-05-시계열자료분석-학습2.html",
-      "/posts/time-series/2022-10-02-시계열자료분석-학습1.html"
+      "/posts/time-series/2022-10-02-시계열자료분석-학습1.html",
+      "/posts/regression/2022-08-10_회귀분석.html"
     ]
   }
 ]
