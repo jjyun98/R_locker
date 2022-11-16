@@ -4,9 +4,9 @@ image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: instagram
+      text: Instagram
+      href: https://instagram.com
     - icon: github
       text: Github
       href: https://github.com/jjyun98

@@ -4,17 +4,17 @@ project:
 website:
   title: "Yun's blog"
   navbar: 
-    background: brown
+    background: skyblue
     logo: ./img/school-locker.png
     right:
       - about.qmd
       - icon: github
         href: https://github.com/jjyun98/R_locker/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: instagram
+        href: https://instagram.com
 format:
   html:
-    theme: lumen
+    theme: Instance
     css: styles.css
 
 editor: visual
