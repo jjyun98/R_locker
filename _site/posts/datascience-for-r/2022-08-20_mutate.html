@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="조윤호">
+<meta name="dcterms.date" content="2022-08-20">
+
+<title>Yun’s blog - mutate</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../.././img/school-locker.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Yun’s blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jjyun98/R_locker/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://instagram.com"><i class="bi bi-instagram" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">mutate</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>조윤호 </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 20, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="mutate" class="level1">
+<h1>mutate</h1>
+<p>mutate(filter, count, select, left_join, match), join</p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'nycflights13'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="mutate-1" class="level2">
+<h2 class="anchored" data-anchor-id="mutate-1">mutate</h2>
+<section id="count-filter" class="level3">
+<h3 class="anchored" data-anchor-id="count-filter">count, filter</h3>
+<ul>
+<li>테이블에서 기본키를 확인한 후 실제로 기본키가 각 관측값을 고유하게 식별하는지 확인하기 위해 <code>count</code>하고 <code>n</code>이 1보다 큰 항목을 찾는다.</li>
+</ul>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>weather <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(year, month, day, hour, origin) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 3 × 6</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">origin</th><th scope="col">n</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>11</td><td>3</td><td>1</td><td>EWR</td><td>2</td></tr>
+    <tr><td>2013</td><td>11</td><td>3</td><td>1</td><td>JFK</td><td>2</td></tr>
+    <tr><td>2013</td><td>11</td><td>3</td><td>1</td><td>LGA</td><td>2</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">%&gt;%</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(year, month, day, flight) <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 5</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">flight</th><th scope="col">n</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td> 1</td><td>2</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td> 3</td><td>2</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td> 4</td><td>2</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>11</td><td>3</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>15</td><td>2</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>21</td><td>2</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="select" class="level3">
+<h3 class="anchored" data-anchor-id="select">select</h3>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="ot">&lt;-</span> flights <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(year<span class="sc">:</span>day, hour, origin, dest, tailnum, carrier)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 8</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">tailnum</th><th scope="col">carrier</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>IAH</td><td>N14228</td><td>UA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>LGA</td><td>IAH</td><td>N24211</td><td>UA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>MIA</td><td>N619AA</td><td>AA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>BQN</td><td>N804JB</td><td>B6</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>LGA</td><td>ATL</td><td>N668DN</td><td>DL</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>ORD</td><td>N39463</td><td>UA</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="left_join" class="level3">
+<h3 class="anchored" data-anchor-id="left_join">left_join</h3>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="sc">-</span>origin, <span class="sc">-</span>dest) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(airlines, <span class="at">by =</span> <span class="st">"carrier"</span>) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 7</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">tailnum</th><th scope="col">carrier</th><th scope="col">name</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N14228</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N24211</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N619AA</td><td>AA</td><td>American Airlines Inc.</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N804JB</td><td>B6</td><td>JetBlue Airways       </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>N668DN</td><td>DL</td><td>Delta Air Lines Inc.  </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N39463</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="sc">-</span>origin, <span class="sc">-</span>dest) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 6</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">tailnum</th><th scope="col">carrier</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N14228</td><td>UA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N24211</td><td>UA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N619AA</td><td>AA</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N804JB</td><td>B6</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>N668DN</td><td>DL</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N39463</td><td>UA</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>airlines <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 2</caption>
+<thead>
+    <tr><th scope="col">carrier</th><th scope="col">name</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>9E</td><td>Endeavor Air Inc.       </td></tr>
+    <tr><td>AA</td><td>American Airlines Inc.  </td></tr>
+    <tr><td>AS</td><td>Alaska Airlines Inc.    </td></tr>
+    <tr><td>B6</td><td>JetBlue Airways         </td></tr>
+    <tr><td>DL</td><td>Delta Air Lines Inc.    </td></tr>
+    <tr><td>EV</td><td>ExpressJet Airlines Inc.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><code>match</code> : 말 그대로 다른 데이터의 열의 항목과 이 열의 해당 항목에 맞는 것을 매치해준다.</p>
+</section>
+<section id="match" class="level3">
+<h3 class="anchored" data-anchor-id="match">match</h3>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="sc">-</span>origin, <span class="sc">-</span>dest) <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(<span class="at">name =</span> airlines<span class="sc">$</span>name[<span class="fu">match</span>(carrier, airlines<span class="sc">$</span>carrier)]) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 7</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">tailnum</th><th scope="col">carrier</th><th scope="col">name</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N14228</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N24211</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N619AA</td><td>AA</td><td>American Airlines Inc.</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N804JB</td><td>B6</td><td>JetBlue Airways       </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>N668DN</td><td>DL</td><td>Delta Air Lines Inc.  </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>N39463</td><td>UA</td><td>United Air Lines Inc. </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="join" class="level2">
+<h2 class="anchored" data-anchor-id="join">join</h2>
+<p><code>-</code> 예시 추가</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>key, <span class="sc">~</span>val_x,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">"x1"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">"x2"</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>, <span class="st">"x3"</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>key, <span class="sc">~</span>val_y,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">"y1"</span>,</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">"y2"</span>,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span>, <span class="st">"y3"</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 3 × 2</caption>
+<thead>
+    <tr><th scope="col">key</th><th scope="col">val_x</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1</td><td>x1</td></tr>
+    <tr><td>2</td><td>x2</td></tr>
+    <tr><td>3</td><td>x3</td></tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 3 × 2</caption>
+<thead>
+    <tr><th scope="col">key</th><th scope="col">val_y</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1</td><td>y1</td></tr>
+    <tr><td>2</td><td>y2</td></tr>
+    <tr><td>4</td><td>y3</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">%&gt;%</span> <span class="fu">inner_join</span>(y, <span class="at">by =</span> <span class="st">"key"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 2 × 3</caption>
+<thead>
+    <tr><th scope="col">key</th><th scope="col">val_x</th><th scope="col">val_y</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1</td><td>x1</td><td>y1</td></tr>
+    <tr><td>2</td><td>x2</td><td>y2</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>조인 종류</p>
+</blockquote>
+<section id="이미지-삽입-예정" class="level3">
+<h3 class="anchored" data-anchor-id="이미지-삽입-예정">이미지 삽입 예정</h3>
+</section>
+<section id="중복키" class="level3">
+<h3 class="anchored" data-anchor-id="중복키">중복키</h3>
+<ul>
+<li>키가 고유하지 않고 중복일 경우?</li>
+</ul>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>key, <span class="sc">~</span>val_x,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">"x1"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">"x2"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">"x3"</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">"x4"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>key, <span class="sc">~</span>val_y,</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>, <span class="st">"y1"</span>,</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>, <span class="st">"y2"</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(x, y, <span class="at">by =</span> <span class="st">"key"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 4 × 3</caption>
+<thead>
+    <tr><th scope="col">key</th><th scope="col">val_x</th><th scope="col">val_y</th></tr>
+    <tr><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>1</td><td>x1</td><td>y1</td></tr>
+    <tr><td>2</td><td>x2</td><td>y2</td></tr>
+    <tr><td>2</td><td>x3</td><td>y2</td></tr>
+    <tr><td>1</td><td>x4</td><td>y1</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>일반적으로 테이블 쌍에서 조인하려는 변수는 두 테이블에서 항상 하나의 변수(같은 이름)에 의해 조인되었다.<br> <code>by = "key"</code>에 의해<br> 하지만, <code>by = NULL</code>를 사용하면 두 테이블에 있는 모든 변수를 사용하여 조인한다.<br> 이를 nature join이라 부름.</li>
+</ul>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(weather) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining, by = c("year", "month", "day", "hour", "origin")</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 18</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">tailnum</th><th scope="col">carrier</th><th scope="col">temp</th><th scope="col">dewp</th><th scope="col">humid</th><th scope="col">wind_dir</th><th scope="col">wind_speed</th><th scope="col">wind_gust</th><th scope="col">precip</th><th scope="col">pressure</th><th scope="col">visib</th><th scope="col">time_hour</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dttm&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>IAH</td><td>N14228</td><td>UA</td><td>39.02</td><td>28.04</td><td>64.43</td><td>260</td><td>12.65858</td><td>      NA</td><td>0</td><td>1011.9</td><td>10</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>LGA</td><td>IAH</td><td>N24211</td><td>UA</td><td>39.92</td><td>24.98</td><td>54.81</td><td>250</td><td>14.96014</td><td>21.86482</td><td>0</td><td>1011.4</td><td>10</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>MIA</td><td>N619AA</td><td>AA</td><td>39.02</td><td>26.96</td><td>61.63</td><td>260</td><td>14.96014</td><td>      NA</td><td>0</td><td>1012.1</td><td>10</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>BQN</td><td>N804JB</td><td>B6</td><td>39.02</td><td>26.96</td><td>61.63</td><td>260</td><td>14.96014</td><td>      NA</td><td>0</td><td>1012.1</td><td>10</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>LGA</td><td>ATL</td><td>N668DN</td><td>DL</td><td>39.92</td><td>24.98</td><td>54.81</td><td>260</td><td>16.11092</td><td>23.01560</td><td>0</td><td>1011.7</td><td>10</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>ORD</td><td>N39463</td><td>UA</td><td>39.02</td><td>28.04</td><td>64.43</td><td>260</td><td>12.65858</td><td>      NA</td><td>0</td><td>1011.9</td><td>10</td><td>2013-01-01 05:00:00</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><code>union</code> : 합집합 함수</p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">union</span>(<span class="fu">colnames</span>(flights2),<span class="fu">colnames</span>(weather))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class="list-inline"><li>'year'</li><li>'month'</li><li>'day'</li><li>'hour'</li><li>'origin'</li><li>'dest'</li><li>'tailnum'</li><li>'carrier'</li><li>'temp'</li><li>'dewp'</li><li>'humid'</li><li>'wind_dir'</li><li>'wind_speed'</li><li>'wind_gust'</li><li>'precip'</li><li>'pressure'</li><li>'visib'</li><li>'time_hour'</li></ol>
+</div>
+</div>
+<ul>
+<li>결론 : 공통된 모든 변수로 조인</li>
+</ul>
+<p><code>-</code> 원래 하던 것처럼 특정 변수로 조인</p>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(planes, <span class="at">by =</span> <span class="st">"tailnum"</span>) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 16</caption>
+<thead>
+    <tr><th scope="col">year.x</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">tailnum</th><th scope="col">carrier</th><th scope="col">year.y</th><th scope="col">type</th><th scope="col">manufacturer</th><th scope="col">model</th><th scope="col">engines</th><th scope="col">seats</th><th scope="col">speed</th><th scope="col">engine</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>IAH</td><td>N14228</td><td>UA</td><td>1999</td><td>Fixed wing multi engine</td><td>BOEING</td><td>737-824  </td><td>2</td><td>149</td><td>NA</td><td>Turbo-fan</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>LGA</td><td>IAH</td><td>N24211</td><td>UA</td><td>1998</td><td>Fixed wing multi engine</td><td>BOEING</td><td>737-824  </td><td>2</td><td>149</td><td>NA</td><td>Turbo-fan</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>MIA</td><td>N619AA</td><td>AA</td><td>1990</td><td>Fixed wing multi engine</td><td>BOEING</td><td>757-223  </td><td>2</td><td>178</td><td>NA</td><td>Turbo-fan</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>BQN</td><td>N804JB</td><td>B6</td><td>2012</td><td>Fixed wing multi engine</td><td>AIRBUS</td><td>A320-232 </td><td>2</td><td>200</td><td>NA</td><td>Turbo-fan</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>LGA</td><td>ATL</td><td>N668DN</td><td>DL</td><td>1991</td><td>Fixed wing multi engine</td><td>BOEING</td><td>757-232  </td><td>2</td><td>178</td><td>NA</td><td>Turbo-fan</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>ORD</td><td>N39463</td><td>UA</td><td>2012</td><td>Fixed wing multi engine</td><td>BOEING</td><td>737-924ER</td><td>2</td><td>191</td><td>NA</td><td>Turbo-fan</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>아래는 각 테이블에서 다른 이름의 변수이지만 하나로 통합해서 조인하고자 하는 경우<br> 조인후에는 첫 번째 변수의 이름으로 출력된다.<br> 여기서는 dest로 통합</li>
+</ul>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(airports, <span class="fu">c</span>(<span class="st">"dest"</span> <span class="ot">=</span> <span class="st">"faa"</span>)) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 15</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">hour</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">tailnum</th><th scope="col">carrier</th><th scope="col">name</th><th scope="col">lat</th><th scope="col">lon</th><th scope="col">alt</th><th scope="col">tz</th><th scope="col">dst</th><th scope="col">tzone</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>IAH</td><td>N14228</td><td>UA</td><td>George Bush Intercontinental   </td><td>29.98443</td><td>-95.34144</td><td>  97</td><td>-6</td><td>A </td><td>America/Chicago </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>LGA</td><td>IAH</td><td>N24211</td><td>UA</td><td>George Bush Intercontinental   </td><td>29.98443</td><td>-95.34144</td><td>  97</td><td>-6</td><td>A </td><td>America/Chicago </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>MIA</td><td>N619AA</td><td>AA</td><td>Miami Intl                     </td><td>25.79325</td><td>-80.29056</td><td>   8</td><td>-5</td><td>A </td><td>America/New_York</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>JFK</td><td>BQN</td><td>N804JB</td><td>B6</td><td>NA                             </td><td>      NA</td><td>       NA</td><td>  NA</td><td>NA</td><td>NA</td><td>NA              </td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>6</td><td>LGA</td><td>ATL</td><td>N668DN</td><td>DL</td><td>Hartsfield Jackson Atlanta Intl</td><td>33.63672</td><td>-84.42807</td><td>1026</td><td>-5</td><td>A </td><td>America/New_York</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>5</td><td>EWR</td><td>ORD</td><td>N39463</td><td>UA</td><td>Chicago Ohare Intl             </td><td>41.97860</td><td>-87.90484</td><td> 668</td><td>-6</td><td>A </td><td>America/Chicago </td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="filter-join" class="level3">
+<h3 class="anchored" data-anchor-id="filter-join">filter join</h3>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>top_dest <span class="ot">&lt;-</span> flights <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(dest, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="dv">10</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>top_dest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 10 × 2</caption>
+<thead>
+    <tr><th scope="col">dest</th><th scope="col">n</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>ORD</td><td>17283</td></tr>
+    <tr><td>ATL</td><td>17215</td></tr>
+    <tr><td>LAX</td><td>16174</td></tr>
+    <tr><td>BOS</td><td>15508</td></tr>
+    <tr><td>MCO</td><td>14082</td></tr>
+    <tr><td>CLT</td><td>14064</td></tr>
+    <tr><td>SFO</td><td>13331</td></tr>
+    <tr><td>FLL</td><td>12055</td></tr>
+    <tr><td>MIA</td><td>11728</td></tr>
+    <tr><td>DCA</td><td> 9705</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">%&gt;%</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(dest <span class="sc">%in%</span> top_dest<span class="sc">$</span>dest) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 19</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">dep_time</th><th scope="col">sched_dep_time</th><th scope="col">dep_delay</th><th scope="col">arr_time</th><th scope="col">sched_arr_time</th><th scope="col">arr_delay</th><th scope="col">carrier</th><th scope="col">flight</th><th scope="col">tailnum</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">air_time</th><th scope="col">distance</th><th scope="col">hour</th><th scope="col">minute</th><th scope="col">time_hour</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dttm&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>542</td><td>540</td><td> 2</td><td>923</td><td>850</td><td> 33</td><td>AA</td><td>1141</td><td>N619AA</td><td>JFK</td><td>MIA</td><td>160</td><td>1089</td><td>5</td><td>40</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>554</td><td>600</td><td>-6</td><td>812</td><td>837</td><td>-25</td><td>DL</td><td> 461</td><td>N668DN</td><td>LGA</td><td>ATL</td><td>116</td><td> 762</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>554</td><td>558</td><td>-4</td><td>740</td><td>728</td><td> 12</td><td>UA</td><td>1696</td><td>N39463</td><td>EWR</td><td>ORD</td><td>150</td><td> 719</td><td>5</td><td>58</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>555</td><td>600</td><td>-5</td><td>913</td><td>854</td><td> 19</td><td>B6</td><td> 507</td><td>N516JB</td><td>EWR</td><td>FLL</td><td>158</td><td>1065</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>557</td><td>600</td><td>-3</td><td>838</td><td>846</td><td> -8</td><td>B6</td><td>  79</td><td>N593JB</td><td>JFK</td><td>MCO</td><td>140</td><td> 944</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>558</td><td>600</td><td>-2</td><td>753</td><td>745</td><td>  8</td><td>AA</td><td> 301</td><td>N3ALAA</td><td>LGA</td><td>ORD</td><td>138</td><td> 733</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>위에서 뽑은 상위 10개의 dest에 해당하는 열만 filtering</p>
+<p><code>semi_join</code> : 매칭에만 관심, 조건에 해당하는 항목을 매칭해준다.<br> <code>anti_join</code> : y와 매치되는 x의 모든 관측값을 삭제한다.<br> 즉, 불일치 행만 모아준다.<br> 여기서는 매치되지 않는 항공편이 많은지 궁금할 때 사용</p>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">semi_join</span>(top_dest) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining, by = "dest"</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 19</caption>
+<thead>
+    <tr><th scope="col">year</th><th scope="col">month</th><th scope="col">day</th><th scope="col">dep_time</th><th scope="col">sched_dep_time</th><th scope="col">dep_delay</th><th scope="col">arr_time</th><th scope="col">sched_arr_time</th><th scope="col">arr_delay</th><th scope="col">carrier</th><th scope="col">flight</th><th scope="col">tailnum</th><th scope="col">origin</th><th scope="col">dest</th><th scope="col">air_time</th><th scope="col">distance</th><th scope="col">hour</th><th scope="col">minute</th><th scope="col">time_hour</th></tr>
+    <tr><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dttm&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>2013</td><td>1</td><td>1</td><td>542</td><td>540</td><td> 2</td><td>923</td><td>850</td><td> 33</td><td>AA</td><td>1141</td><td>N619AA</td><td>JFK</td><td>MIA</td><td>160</td><td>1089</td><td>5</td><td>40</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>554</td><td>600</td><td>-6</td><td>812</td><td>837</td><td>-25</td><td>DL</td><td> 461</td><td>N668DN</td><td>LGA</td><td>ATL</td><td>116</td><td> 762</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>554</td><td>558</td><td>-4</td><td>740</td><td>728</td><td> 12</td><td>UA</td><td>1696</td><td>N39463</td><td>EWR</td><td>ORD</td><td>150</td><td> 719</td><td>5</td><td>58</td><td>2013-01-01 05:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>555</td><td>600</td><td>-5</td><td>913</td><td>854</td><td> 19</td><td>B6</td><td> 507</td><td>N516JB</td><td>EWR</td><td>FLL</td><td>158</td><td>1065</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>557</td><td>600</td><td>-3</td><td>838</td><td>846</td><td> -8</td><td>B6</td><td>  79</td><td>N593JB</td><td>JFK</td><td>MCO</td><td>140</td><td> 944</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+    <tr><td>2013</td><td>1</td><td>1</td><td>558</td><td>600</td><td>-2</td><td>753</td><td>745</td><td>  8</td><td>AA</td><td> 301</td><td>N3ALAA</td><td>LGA</td><td>ORD</td><td>138</td><td> 733</td><td>6</td><td> 0</td><td>2013-01-01 06:00:00</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>결과적으로 위의 <code>filter</code>와 같은 결과 나옴</p>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anti_join</span>(planes, <span class="at">by =</span> <span class="st">"tailnum"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">count</span>(tailnum, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<table class="dataframe table table-sm table-striped">
+<caption>A tibble: 6 × 2</caption>
+<thead>
+    <tr><th scope="col">tailnum</th><th scope="col">n</th></tr>
+    <tr><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;int&gt;</th></tr>
+</thead>
+<tbody>
+    <tr><td>NA    </td><td>2512</td></tr>
+    <tr><td>N725MQ</td><td> 575</td></tr>
+    <tr><td>N722MQ</td><td> 513</td></tr>
+    <tr><td>N723MQ</td><td> 507</td></tr>
+    <tr><td>N713MQ</td><td> 483</td></tr>
+    <tr><td>N735MQ</td><td> 396</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="집합-연산" class="level3">
+<h3 class="anchored" data-anchor-id="집합-연산">집합 연산</h3>
+<blockquote class="blockquote">
+<p><code>intersect(x,y)</code> : 교집합<br>
+<code>union(x,y)</code> : 합집합<br>
+<code>set_diff(x,y)</code> : x에는 있지만, y에는 없는 관측값 반환</p>
+</blockquote>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
