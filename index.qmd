@@ -10,8 +10,3 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-
-\
-통계학과를 다니면서 배운 내용을 정리한 곳입니다!
-
-여기는 R을 사용한 자료만 모여 있습니다.\
