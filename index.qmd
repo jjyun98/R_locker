@@ -1,5 +1,5 @@
 ---
-title: "R_locker"
+title: "My stats"
 listing:
   contents: posts
   sort: "date desc"
