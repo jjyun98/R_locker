@@ -9,7 +9,7 @@
 <meta name="author" content="조윤호">
 <meta name="dcterms.date" content="2022-10-12">
 
-<title>Yun’s blog - (수업) 시계열 자료분석 실습 4</title>
+<title>blog - (수업) 시계열 자료분석 실습 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,7 +143,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <img src="../.././img/school-locker.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Yun’s blog</span>
+    <span class="navbar-title">blog</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link active" href="../../about.html" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -161,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://instagram.com"><i class="bi bi-instagram" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -170,12 +170,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(수업) 시계열 자료분석 실습 4</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">(수업) 시계열 자료분석 실습 4</h1>
+      <h1 class="title d-none d-lg-block">(수업) 시계열 자료분석 실습 4</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">lesson</div>
@@ -206,8 +214,181 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">About</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Posts</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Datascience for R</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-01-data_handling_a.html" class="sidebar-item-text sidebar-link">Data handling a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-02-data_handling_b.html" class="sidebar-item-text sidebar-link">Data handling b</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-06_factor.html" class="sidebar-item-text sidebar-link">factor</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-07-01-ggplot1.html" class="sidebar-item-text sidebar-link">ggplot a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-07-02-ggplot2.html" class="sidebar-item-text sidebar-link">ggplot b</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-20_mutate.html" class="sidebar-item-text sidebar-link">mutate</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-14_purr.html" class="sidebar-item-text sidebar-link">purr와 broom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-21_string.html" class="sidebar-item-text sidebar-link">string</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-18_tibble.html" class="sidebar-item-text sidebar-link">tibble, parsing</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-19_tidydata.html" class="sidebar-item-text sidebar-link">tidy data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-15_vector.html" class="sidebar-item-text sidebar-link">vector</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-11_모델링.html" class="sidebar-item-text sidebar-link">모델링 a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-12_모델링2.html" class="sidebar-item-text sidebar-link">모델링 a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-17_반복문.html" class="sidebar-item-text sidebar-link">반복문</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Regression</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/regression/2022-08-10_회귀분석.html" class="sidebar-item-text sidebar-link">회귀분석</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Time Series</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-02-시계열자료분석-학습1.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-05-시계열자료분석-학습2.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 2</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-08-시계열자료분석-학습3.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 3</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-12-시계열자료분석-학습4.html" class="sidebar-item-text sidebar-link active">(수업) 시계열 자료분석 실습 4</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/시계열자료분석-실습5.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 5</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#수업-시계열-자료분석-실습-4" id="toc-수업-시계열-자료분석-실습-4" class="nav-link active" data-scroll-target="#수업-시계열-자료분석-실습-4">(수업) 시계열 자료분석 실습 4</a>
+  <ul class="collapse">
+  <li><a href="#정상-시계열-생성" id="toc-정상-시계열-생성" class="nav-link" data-scroll-target="#정상-시계열-생성">정상 시계열 생성</a>
+  <ul class="collapse">
+  <li><a href="#list-description-for-ma1-model" id="toc-list-description-for-ma1-model" class="nav-link" data-scroll-target="#list-description-for-ma1-model">list description for MA(1) model</a></li>
+  <li><a href="#iid-정규분포-백색잡음" id="toc-iid-정규분포-백색잡음" class="nav-link" data-scroll-target="#iid-정규분포-백색잡음">iid 정규분포 (백색잡음)</a></li>
+  <li><a href="#여러가지-데이터에-대한-acf-pacf-그림" id="toc-여러가지-데이터에-대한-acf-pacf-그림" class="nav-link" data-scroll-target="#여러가지-데이터에-대한-acf-pacf-그림">여러가지 데이터에 대한 ACF PACF 그림</a></li>
+  <li><a href="#비행기-메모-추가" id="toc-비행기-메모-추가" class="nav-link" data-scroll-target="#비행기-메모-추가">비행기 메모 추가</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -218,28 +399,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>(수업) 시계열 자료분석 실습 4</h1>
 <p>ACF, PACF, WN</p>
 <div class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'forecast'</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'gridExtra'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'data.table'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(<span class="st">'forecast'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(<span class="st">'gridExtra'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(<span class="st">'data.table'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="정상-시계열-생성" class="level2">
 <h2 class="anchored" data-anchor-id="정상-시계열-생성">정상 시계열 생성</h2>
 <div class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>z <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">z =</span> z</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z),</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="at">z =</span> z</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="24">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(t, z)) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">'grey'</span>) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(t, z)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">'grey'</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
 </div>
@@ -253,29 +434,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>결국<br> <span class="math inline">\(z_t\)</span> = <span class="math inline">\(\mu + e_t\)</span> - <span class="math inline">\(\theta\)</span>*<span class="math inline">\(e_{t-1}\)</span><br> 그리고<br><span class="math inline">\(e_t\)</span> ~ <span class="math inline">\(wn(0, \sigma^2)\)</span></li>
 </ul>
 <div class="cell" data-execution_count="25">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ma1_sim <span class="ot">&lt;-</span> <span class="cf">function</span>(mu, theta, sigma, n){</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    z <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, n<span class="sc">*</span><span class="dv">2</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    e <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n<span class="sc">*</span><span class="dv">2</span>, <span class="dv">0</span>, sigma<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    z[<span class="dv">1</span>] <span class="ot">&lt;-</span> mu <span class="sc">+</span> e[<span class="dv">1</span>] <span class="co"># 첫 번째는 손으로 입력</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>(n<span class="sc">*</span><span class="dv">2</span>)){</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        z[k] <span class="ot">&lt;-</span> mu <span class="sc">+</span> e[k] <span class="sc">-</span> theta<span class="sc">*</span>e[k<span class="dv">-1</span>]</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(z[<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span>n)]) <span class="co"># 우리는 100개만 생성하고 싶었으므로 200개 만든 것중 뒤에 거 100개만 선택</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>ma1_sim <span class="ot">&lt;-</span> <span class="cf">function</span>(mu, theta, sigma, n){</span>
+<span id="cb5-2"><a href="#cb5-2"></a>    z <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, n<span class="sc">*</span><span class="dv">2</span>)</span>
+<span id="cb5-3"><a href="#cb5-3"></a>    e <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n<span class="sc">*</span><span class="dv">2</span>, <span class="dv">0</span>, sigma<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb5-4"><a href="#cb5-4"></a>    z[<span class="dv">1</span>] <span class="ot">&lt;-</span> mu <span class="sc">+</span> e[<span class="dv">1</span>] <span class="co"># 첫 번째는 손으로 입력</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>    </span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>(n<span class="sc">*</span><span class="dv">2</span>)){</span>
+<span id="cb5-7"><a href="#cb5-7"></a>        z[k] <span class="ot">&lt;-</span> mu <span class="sc">+</span> e[k] <span class="sc">-</span> theta<span class="sc">*</span>e[k<span class="dv">-1</span>]</span>
+<span id="cb5-8"><a href="#cb5-8"></a>        }</span>
+<span id="cb5-9"><a href="#cb5-9"></a>    </span>
+<span id="cb5-10"><a href="#cb5-10"></a>    <span class="fu">return</span>(z[<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span>n)]) <span class="co"># 우리는 100개만 생성하고 싶었으므로 200개 만든 것중 뒤에 거 100개만 선택</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">z1 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">z2 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="fl">0.3</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">z3 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="sc">-</span><span class="fl">0.3</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">z4 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="sc">-</span><span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">100</span>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb6-2"><a href="#cb6-2"></a>    <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="at">z1 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="at">z2 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="fl">0.3</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
+<span id="cb6-5"><a href="#cb6-5"></a>    <span class="at">z3 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="sc">-</span><span class="fl">0.3</span>, <span class="dv">2</span>, <span class="dv">100</span>),</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="at">z4 =</span> <span class="fu">ma1_sim</span>(<span class="dv">10</span>, <span class="sc">-</span><span class="fl">0.7</span>, <span class="dv">2</span>, <span class="dv">100</span>)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>tmp.data <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <table class="dataframe table table-sm table-striped">
@@ -296,15 +477,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>theta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="sc">-</span><span class="fl">0.3</span>, <span class="sc">-</span><span class="fl">0.7</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot</span>(tmp.data<span class="sc">$</span>t, tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)], <span class="at">type =</span> <span class="st">'l'</span>,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]),</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">'t'</span>,</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylab =</span> <span class="st">'z'</span>)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">10</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>theta <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="sc">-</span><span class="fl">0.3</span>, <span class="sc">-</span><span class="fl">0.7</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="fu">plot</span>(tmp.data<span class="sc">$</span>t, tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)], <span class="at">type =</span> <span class="st">'l'</span>,</span>
+<span id="cb8-4"><a href="#cb8-4"></a>         <span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
+<span id="cb8-5"><a href="#cb8-5"></a>         <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]),</span>
+<span id="cb8-6"><a href="#cb8-6"></a>         <span class="at">xlab =</span> <span class="st">'t'</span>,</span>
+<span id="cb8-7"><a href="#cb8-7"></a>         <span class="at">ylab =</span> <span class="st">'z'</span>)</span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">10</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb8-9"><a href="#cb8-9"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
 </div>
@@ -324,10 +505,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="acf" class="level4">
 <h4 class="anchored" data-anchor-id="acf">ACF</h4>
 <div class="cell" data-execution_count="29">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">acf</span>(tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)],</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]))</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
+<span id="cb9-2"><a href="#cb9-2"></a>    <span class="fu">acf</span>(tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)],</span>
+<span id="cb9-3"><a href="#cb9-3"></a>        <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]))</span>
+<span id="cb9-4"><a href="#cb9-4"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
@@ -349,10 +530,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="pacf" class="level4">
 <h4 class="anchored" data-anchor-id="pacf">PACF</h4>
 <div class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pacf</span>(tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)],</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]))</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>){</span>
+<span id="cb10-2"><a href="#cb10-2"></a>    <span class="fu">pacf</span>(tmp.data[, (k<span class="sc">+</span><span class="dv">1</span>)],</span>
+<span id="cb10-3"><a href="#cb10-3"></a>         <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' theta = '</span>, theta[k]))</span>
+<span id="cb10-4"><a href="#cb10-4"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
 </div>
@@ -374,44 +555,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="iid-정규분포-백색잡음" class="level3">
 <h3 class="anchored" data-anchor-id="iid-정규분포-백색잡음">iid 정규분포 (백색잡음)</h3>
 <div class="cell" data-execution_count="31">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z),</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> z</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>z <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb11-4"><a href="#cb11-4"></a>  <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z),</span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="at">z =</span> z</span>
+<span id="cb11-6"><a href="#cb11-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>예쁘게 그리기<br> ggplot에서 ACF쓸려면 ggAcf사용하면된다.<br> PACF사용하려면 ggPacf사용하면 됨.</li>
 </ul>
 <div class="cell" data-execution_count="32">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(t, z)) <span class="sc">+</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="st">'Time series plot of iid N(0,1)'</span>) <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">'grey'</span>) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(z) <span class="sc">+</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_blank</span>())</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggPacf</span>(z) <span class="sc">+</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(t, z)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>, <span class="at">lwd =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="fu">ggtitle</span>(<span class="st">'Time series plot of iid N(0,1)'</span>) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">'grey'</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(z) <span class="sc">+</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a><span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb12-11"><a href="#cb12-11"></a></span>
+<span id="cb12-12"><a href="#cb12-12"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggPacf</span>(z) <span class="sc">+</span></span>
+<span id="cb12-13"><a href="#cb12-13"></a><span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb12-14"><a href="#cb12-14"></a><span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="33">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(p1, p2, p3, <span class="at">nrow =</span> <span class="dv">2</span>,</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">layout_matrix =</span> <span class="fu">rbind</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>),</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">grid.arrange</span>(p1, p2, p3, <span class="at">nrow =</span> <span class="dv">2</span>,</span>
+<span id="cb13-2"><a href="#cb13-2"></a>             <span class="at">layout_matrix =</span> <span class="fu">rbind</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb13-3"><a href="#cb13-3"></a>                                   <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="34">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>p1</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>p2</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>p3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>p1</span>
+<span id="cb14-2"><a href="#cb14-2"></a>p2</span>
+<span id="cb14-3"><a href="#cb14-3"></a>p3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
 </div>
@@ -426,25 +607,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>wn이기에 <span class="math inline">\(\rho\)</span>들은 거의 다 0이여야한다.<br> 실제로 보면 전부다 0에 가까운 숫자들임.<br> 나중에 잔차 검증할 때에도 사용</li>
 </ul>
 <div class="cell" data-execution_count="35">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">layout</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="dv">2</span>, <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z<span class="sc">~</span>t, tmp.data, <span class="at">type =</span> <span class="st">'l'</span>,</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' iid N(0,1)'</span>),</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="at">xlab =</span> <span class="st">'t'</span>,</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="at">ylab =</span> <span class="st">'z'</span>)</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(z)</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(z)</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">layout</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="dv">2</span>, <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="fu">plot</span>(z<span class="sc">~</span>t, tmp.data, <span class="at">type =</span> <span class="st">'l'</span>,</span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
+<span id="cb15-4"><a href="#cb15-4"></a><span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">' iid N(0,1)'</span>),</span>
+<span id="cb15-5"><a href="#cb15-5"></a><span class="at">xlab =</span> <span class="st">'t'</span>,</span>
+<span id="cb15-6"><a href="#cb15-6"></a><span class="at">ylab =</span> <span class="st">'z'</span>)</span>
+<span id="cb15-7"><a href="#cb15-7"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb15-8"><a href="#cb15-8"></a></span>
+<span id="cb15-9"><a href="#cb15-9"></a><span class="fu">acf</span>(z)</span>
+<span id="cb15-10"><a href="#cb15-10"></a><span class="fu">pacf</span>(z)</span>
+<span id="cb15-11"><a href="#cb15-11"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="36">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(z)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(z)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">acf</span>(z)</span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="fu">pacf</span>(z)</span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
 </div>
@@ -461,31 +642,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>추세법이나 분해법 사용시 sin함수 사용한 것처럼, 위에서 시작해서 위까지 즉, 밑에 보면 주기가 6인 사인함수<br></li>
 </ul>
 <div class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">sin</span>(t<span class="sc">*</span>pi<span class="sc">/</span><span class="dv">3</span>)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z[<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>], <span class="at">type =</span> <span class="st">'o'</span>, <span class="at">ylab =</span> <span class="st">''</span>, <span class="at">xlab =</span> <span class="st">''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>y <span class="ot">&lt;-</span> <span class="fu">sin</span>(t<span class="sc">*</span>pi<span class="sc">/</span><span class="dv">3</span>)</span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">plot</span>(z[<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>], <span class="at">type =</span> <span class="st">'o'</span>, <span class="at">ylab =</span> <span class="st">''</span>, <span class="at">xlab =</span> <span class="st">''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">layout</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="dv">2</span>, <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(t, y, <span class="at">type =</span> <span class="st">'l'</span>,</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">'t'</span>,</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">'z'</span>)</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(z)</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(z)</span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">layout</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="dv">2</span>, <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="fu">plot</span>(t, y, <span class="at">type =</span> <span class="st">'l'</span>,</span>
+<span id="cb18-3"><a href="#cb18-3"></a>     <span class="at">col =</span> <span class="st">'steelblue'</span>,</span>
+<span id="cb18-4"><a href="#cb18-4"></a>     <span class="at">xlab =</span> <span class="st">'t'</span>,</span>
+<span id="cb18-5"><a href="#cb18-5"></a>     <span class="at">ylab =</span> <span class="st">'z'</span>)</span>
+<span id="cb18-6"><a href="#cb18-6"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">'grey'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb18-7"><a href="#cb18-7"></a></span>
+<span id="cb18-8"><a href="#cb18-8"></a><span class="fu">acf</span>(z)</span>
+<span id="cb18-9"><a href="#cb18-9"></a><span class="fu">pacf</span>(z)</span>
+<span id="cb18-10"><a href="#cb18-10"></a><span class="fu">graphics.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(z)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">acf</span>(z)</span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="fu">pacf</span>(z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-12-시계열자료분석-학습4_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
 </div>

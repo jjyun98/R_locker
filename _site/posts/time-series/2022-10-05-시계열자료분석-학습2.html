@@ -9,7 +9,7 @@
 <meta name="author" content="조윤호">
 <meta name="dcterms.date" content="2022-10-05">
 
-<title>Yun98 - (수업) 시계열 자료분석 실습 2</title>
+<title>blog - (수업) 시계열 자료분석 실습 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,7 +131,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -142,7 +142,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <img src="../.././img/school-locker.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Yun98</span>
+    <span class="navbar-title">blog</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -151,7 +151,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link active" href="../../about.html" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -160,7 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://instagram.com"><i class="bi bi-instagram" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -169,12 +169,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(수업) 시계열 자료분석 실습 2</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">(수업) 시계열 자료분석 실습 2</h1>
+      <h1 class="title d-none d-lg-block">(수업) 시계열 자료분석 실습 2</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">lesson</div>
@@ -205,8 +213,195 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">About</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Posts</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Datascience for R</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-01-data_handling_a.html" class="sidebar-item-text sidebar-link">Data handling a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-02-data_handling_b.html" class="sidebar-item-text sidebar-link">Data handling b</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-06_factor.html" class="sidebar-item-text sidebar-link">factor</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-07-01-ggplot1.html" class="sidebar-item-text sidebar-link">ggplot a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-07-02-ggplot2.html" class="sidebar-item-text sidebar-link">ggplot b</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-20_mutate.html" class="sidebar-item-text sidebar-link">mutate</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-14_purr.html" class="sidebar-item-text sidebar-link">purr와 broom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-21_string.html" class="sidebar-item-text sidebar-link">string</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-18_tibble.html" class="sidebar-item-text sidebar-link">tibble, parsing</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-19_tidydata.html" class="sidebar-item-text sidebar-link">tidy data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-15_vector.html" class="sidebar-item-text sidebar-link">vector</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-11_모델링.html" class="sidebar-item-text sidebar-link">모델링 a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-09-12_모델링2.html" class="sidebar-item-text sidebar-link">모델링 a</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/datascience-for-r/2022-08-17_반복문.html" class="sidebar-item-text sidebar-link">반복문</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Regression</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/regression/2022-08-10_회귀분석.html" class="sidebar-item-text sidebar-link">회귀분석</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Time Series</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-02-시계열자료분석-학습1.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-05-시계열자료분석-학습2.html" class="sidebar-item-text sidebar-link active">(수업) 시계열 자료분석 실습 2</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-08-시계열자료분석-학습3.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 3</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/2022-10-12-시계열자료분석-학습4.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 4</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/time-series/시계열자료분석-실습5.html" class="sidebar-item-text sidebar-link">(수업) 시계열 자료분석 실습 5</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#수업-시계열-자료분석-실습-2" id="toc-수업-시계열-자료분석-실습-2" class="nav-link active" data-scroll-target="#수업-시계열-자료분석-실습-2">(수업) 시계열 자료분석 실습 2</a>
+  <ul class="collapse">
+  <li><a href="#moving-average" id="toc-moving-average" class="nav-link" data-scroll-target="#moving-average">Moving Average</a>
+  <ul class="collapse">
+  <li><a href="#다른-방법으로-그림-그리기" id="toc-다른-방법으로-그림-그리기" class="nav-link" data-scroll-target="#다른-방법으로-그림-그리기">다른 방법으로 그림 그리기</a></li>
+  </ul></li>
+  <li><a href="#단순-지수-평활법" id="toc-단순-지수-평활법" class="nav-link" data-scroll-target="#단순-지수-평활법">단순 지수 평활법</a>
+  <ul class="collapse">
+  <li><a href="#여러-평할지수에-따른-변화" id="toc-여러-평할지수에-따른-변화" class="nav-link" data-scroll-target="#여러-평할지수에-따른-변화">여러 평할지수에 따른 변화</a></li>
+  <li><a href="#두-모형의-비교" id="toc-두-모형의-비교" class="nav-link" data-scroll-target="#두-모형의-비교">두 모형의 비교</a></li>
+  <li><a href="#추정된-alpha를-이용한-단순지수평활" id="toc-추정된-alpha를-이용한-단순지수평활" class="nav-link" data-scroll-target="#추정된-alpha를-이용한-단순지수평활">추정된 alpha를 이용한 단순지수평활</a></li>
+  </ul></li>
+  <li><a href="#이중-지수-평활법" id="toc-이중-지수-평활법" class="nav-link" data-scroll-target="#이중-지수-평활법">이중 지수 평활법</a>
+  <ul class="collapse">
+  <li><a href="#모수-이중지수평활" id="toc-모수-이중지수평활" class="nav-link" data-scroll-target="#모수-이중지수평활">1모수 이중지수평활</a></li>
+  <li><a href="#이중지수평활-alpha-beta-추정" id="toc-이중지수평활-alpha-beta-추정" class="nav-link" data-scroll-target="#이중지수평활-alpha-beta-추정">이중지수평활 alpha, beta 추정</a></li>
+  </ul></li>
+  <li><a href="#holt-winters-method계절" id="toc-holt-winters-method계절" class="nav-link" data-scroll-target="#holt-winters-method계절">Holt-Winters Method(계절)</a>
+  <ul class="collapse">
+  <li><a href="#holt-winters-additive-model" id="toc-holt-winters-additive-model" class="nav-link" data-scroll-target="#holt-winters-additive-model">Holt Winters additive model</a></li>
+  <li><a href="#holt-winters-multiplicative-model" id="toc-holt-winters-multiplicative-model" class="nav-link" data-scroll-target="#holt-winters-multiplicative-model">Holt Winters multiplicative model</a></li>
+  <li><a href="#결론" id="toc-결론" class="nav-link" data-scroll-target="#결론">결론</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -217,19 +412,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>(수업) 시계열 자료분석 실습 2</h1>
 <p>평활법(MA, 단순지수, 이중지수, Holt-Winter)</p>
 <div class="cell" data-execution_count="49">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'forecast'</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'lmtest'</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'TTR'</span>)<span class="co"># SMA</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'data.table'</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'gridExtra'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(<span class="st">'forecast'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(<span class="st">'lmtest'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">library</span>(<span class="st">'TTR'</span>)<span class="co"># SMA</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">library</span>(<span class="st">'data.table'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">library</span>(<span class="st">'gridExtra'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>kings <span class="ot">=</span> <span class="fu">scan</span>(<span class="st">"https://robjhyndman.com/tsdldata/misc/kings.dat"</span>, <span class="at">skip =</span> <span class="dv">3</span>) <span class="co"># 영국 왕 수명 데이터</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>kings <span class="ot">=</span> <span class="fu">scan</span>(<span class="st">"https://robjhyndman.com/tsdldata/misc/kings.dat"</span>, <span class="at">skip =</span> <span class="dv">3</span>) <span class="co"># 영국 왕 수명 데이터</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>kingstimeseries <span class="ot">=</span> <span class="fu">ts</span>(kings)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(kingstimeseries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>kingstimeseries <span class="ot">=</span> <span class="fu">ts</span>(kings)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">plot.ts</span>(kingstimeseries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
 </div>
@@ -240,10 +435,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>윈도우 크기가 3인 Moving Averages<br> 원래 데이터에 평활한 거 같이 그려짐</li>
 </ul>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>kingstimeseriesSMA3 <span class="ot">&lt;-</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">3</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(kingstimeseries)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(kingstimeseriesSMA3, <span class="at">col =</span> <span class="st">'red'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">SMA</span>(kingstimeseriesSMA3, <span class="at">n =</span> <span class="dv">10</span>), <span class="at">col =</span> <span class="st">'blue'</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="co"># window 10개짜리</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>kingstimeseriesSMA3 <span class="ot">&lt;-</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">3</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">plot.ts</span>(kingstimeseries)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">lines</span>(kingstimeseriesSMA3, <span class="at">col =</span> <span class="st">'red'</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">lines</span>(<span class="fu">SMA</span>(kingstimeseriesSMA3, <span class="at">n =</span> <span class="dv">10</span>), <span class="at">col =</span> <span class="st">'blue'</span>, <span class="at">lty =</span> <span class="dv">2</span>) <span class="co"># window 10개짜리</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
 </div>
@@ -251,31 +446,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="다른-방법으로-그림-그리기" class="level3">
 <h3 class="anchored" data-anchor-id="다른-방법으로-그림-그리기">다른 방법으로 그림 그리기</h3>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">kings =</span> kings,</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                      <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(kings))</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>tmp.dat[, sma3 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">3</span>)]</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>tmp.dat[, sma10 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">10</span>)]</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(t, kings)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">kings =</span> kings,</span>
+<span id="cb5-2"><a href="#cb5-2"></a>                      <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(kings))</span>
+<span id="cb5-3"><a href="#cb5-3"></a>tmp.dat[, sma3 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">3</span>)]</span>
+<span id="cb5-4"><a href="#cb5-4"></a>tmp.dat[, sma10 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(kingstimeseries, <span class="at">n =</span> <span class="dv">10</span>)]</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(t, kings)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>melt.tmp <span class="ot">&lt;-</span> <span class="fu">melt</span>(tmp.dat, <span class="at">id =</span> <span class="st">'t'</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(melt.tmp, <span class="fu">aes</span>(t, value, <span class="at">col =</span> variable, <span class="at">size =</span> variable, <span class="at">lty =</span> variable)) <span class="sc">+</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">col =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_linetype_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">'solid'</span>, <span class="st">'twodash'</span>, <span class="st">'dashed'</span>)) <span class="sc">+</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">'black'</span>, <span class="st">'orange'</span>, <span class="st">'steelblue'</span>)) <span class="sc">+</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_size_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">1.2</span>, <span class="fl">1.2</span>)) <span class="sc">+</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">guides</span>(<span class="at">lty =</span> <span class="st">'none'</span>, <span class="at">size =</span> <span class="st">'none'</span>) <span class="sc">+</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>melt.tmp <span class="ot">&lt;-</span> <span class="fu">melt</span>(tmp.dat, <span class="at">id =</span> <span class="st">'t'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">ggplot</span>(melt.tmp, <span class="fu">aes</span>(t, value, <span class="at">col =</span> variable, <span class="at">size =</span> variable, <span class="at">lty =</span> variable)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="fu">labs</span>(<span class="at">col =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="fu">scale_linetype_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">'solid'</span>, <span class="st">'twodash'</span>, <span class="st">'dashed'</span>)) <span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">'black'</span>, <span class="st">'orange'</span>, <span class="st">'steelblue'</span>)) <span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="fu">scale_size_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">1.2</span>, <span class="fl">1.2</span>)) <span class="sc">+</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="fu">guides</span>(<span class="at">lty =</span> <span class="st">'none'</span>, <span class="at">size =</span> <span class="st">'none'</span>) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning message:
 “Removed 11 row(s) containing missing values (geom_path).”</code></pre>
@@ -288,13 +483,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>모형을 평가하는 수치들<br> 위의 3개는 window를 3개 가져갔을 때의 MSE들<br> 아래 3개는 window를 10개 가져갔을 때의 MSE들</li>
 </ul>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm=</span>T) <span class="do">##MSE</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">abs</span>(tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3), <span class="at">na.rm=</span>T) <span class="do">##MAE</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">abs</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3)<span class="sc">/</span>tmp.dat<span class="sc">$</span>kings), <span class="at">na.rm=</span>T)<span class="sc">*</span><span class="dv">100</span> <span class="do">##MAPE</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm=</span>T) <span class="do">##MSE</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">abs</span>(tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10), <span class="at">na.rm=</span>T) <span class="do">##MAE</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">abs</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10)<span class="sc">/</span>tmp.dat<span class="sc">$</span>kings), <span class="at">na.rm=</span>T)<span class="sc">*</span><span class="dv">100</span> <span class="do">##MAPE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">mean</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm=</span>T) <span class="do">##MSE</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">mean</span>(<span class="fu">abs</span>(tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3), <span class="at">na.rm=</span>T) <span class="do">##MAE</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">mean</span>(<span class="fu">abs</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma3)<span class="sc">/</span>tmp.dat<span class="sc">$</span>kings), <span class="at">na.rm=</span>T)<span class="sc">*</span><span class="dv">100</span> <span class="do">##MAPE</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="fu">mean</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm=</span>T) <span class="do">##MSE</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="fu">mean</span>(<span class="fu">abs</span>(tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10), <span class="at">na.rm=</span>T) <span class="do">##MAE</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="fu">mean</span>(<span class="fu">abs</span>((tmp.dat<span class="sc">$</span>kings<span class="sc">-</span> tmp.dat<span class="sc">$</span>sma10)<span class="sc">/</span>tmp.dat<span class="sc">$</span>kings), <span class="at">na.rm=</span>T)<span class="sc">*</span><span class="dv">100</span> <span class="do">##MAPE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 128.752777777778
 </div>
@@ -318,9 +513,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>다른 자료</li>
 </ul>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">'mindex.txt'</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mindex <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1986</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mindex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">'mindex.txt'</span>)</span>
+<span id="cb9-2"><a href="#cb9-2"></a>mindex <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1986</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span>
+<span id="cb9-3"><a href="#cb9-3"></a>mindex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <table class="dataframe table table-sm table-striped">
@@ -343,16 +538,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">ind =</span> z,</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                      <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z))</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>tmp.dat[, sma3 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(mindex, <span class="at">n =</span> <span class="dv">3</span>)]</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>tmp.dat[, sma10 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(mindex, <span class="at">n =</span> <span class="dv">10</span>)]</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(t, ind)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">ind =</span> z,</span>
+<span id="cb10-2"><a href="#cb10-2"></a>                      <span class="at">t =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(z))</span>
+<span id="cb10-3"><a href="#cb10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4"></a>tmp.dat[, sma3 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(mindex, <span class="at">n =</span> <span class="dv">3</span>)]</span>
+<span id="cb10-5"><a href="#cb10-5"></a>tmp.dat[, sma10 <span class="sc">:</span><span class="er">=</span> <span class="fu">SMA</span>(mindex, <span class="at">n =</span> <span class="dv">10</span>)]</span>
+<span id="cb10-6"><a href="#cb10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(t, ind)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col =</span> <span class="st">'skyblue'</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="fu">geom_point</span>(<span class="at">col =</span> <span class="st">'steelblue'</span>) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a><span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
@@ -365,22 +560,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="단순-지수-평활법" class="level2">
 <h2 class="anchored" data-anchor-id="단순-지수-평활법">단순 지수 평활법</h2>
 <div class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"mindex.txt"</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>mindex <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1986</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1986-01-01"</span>), </span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">by=</span><span class="st">'month'</span>, </span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ind =</span> z)</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(tmp.dat)</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(day, ind))<span class="sc">+</span><span class="fu">geom_line</span>(<span class="at">col=</span><span class="st">'skyblue'</span>) <span class="sc">+</span></span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">col=</span><span class="st">'steelblue'</span>)<span class="sc">+</span></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Intermediate shipment index"</span>)<span class="sc">+</span></span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>),</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"mindex.txt"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a></span>
+<span id="cb11-3"><a href="#cb11-3"></a>mindex <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">1986</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">12</span>)</span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a>tmp.dat <span class="ot">&lt;-</span> <span class="fu">data.table</span>(<span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1986-01-01"</span>), </span>
+<span id="cb11-6"><a href="#cb11-6"></a>                                     <span class="at">by=</span><span class="st">'month'</span>, </span>
+<span id="cb11-7"><a href="#cb11-7"></a>                                     <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
+<span id="cb11-8"><a href="#cb11-8"></a>                      <span class="at">ind =</span> z)</span>
+<span id="cb11-9"><a href="#cb11-9"></a><span class="fu">head</span>(tmp.dat)</span>
+<span id="cb11-10"><a href="#cb11-10"></a></span>
+<span id="cb11-11"><a href="#cb11-11"></a><span class="fu">ggplot</span>(tmp.dat, <span class="fu">aes</span>(day, ind))<span class="sc">+</span><span class="fu">geom_line</span>(<span class="at">col=</span><span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb11-12"><a href="#cb11-12"></a>  <span class="fu">geom_point</span>(<span class="at">col=</span><span class="st">'steelblue'</span>)<span class="sc">+</span></span>
+<span id="cb11-13"><a href="#cb11-13"></a>  <span class="fu">ggtitle</span>(<span class="st">"Intermediate shipment index"</span>)<span class="sc">+</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb11-15"><a href="#cb11-15"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>),</span>
+<span id="cb11-16"><a href="#cb11-16"></a>        <span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <table class="dataframe table table-sm table-striped">
@@ -407,17 +602,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>평균 = level이라 표현함<br> 예를 들어) 상수평균모형같은 경우 level이 시간에 상관없이 일정하다.<br> 단순지수평활에서는 level이 국지적으로 비슷하지만 전체적으로 보면 변화한다.<br> alpha가 level을 평활할 때 쓰는 평활상수의미</li>
 </ul>
 <div class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="do">### 단순지수평활 alpha=0.9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="do">### 단순지수평활 alpha=0.9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>HoltWinters는 단순지수, 이중지수, 계절평활 3가지 다 가능<br> 이번에는 단순지수평활이라 기울기, 계절성분을 안 쓸거라서 FALSE해줬음.</li>
 </ul>
 <div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fit0 <span class="ot">&lt;-</span> <span class="fu">HoltWinters</span>(mindex, </span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># 레벨</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">beta =</span> <span class="cn">FALSE</span>, <span class="co"># 기울기에 대한 평활상수</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                    <span class="at">gamma =</span> <span class="cn">FALSE</span>) <span class="co"># 계절성분에 대한 평활상수</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>(fit0) <span class="co"># 어떤 정보 값들 가지는 지 보여줌</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>fit0 <span class="ot">&lt;-</span> <span class="fu">HoltWinters</span>(mindex, </span>
+<span id="cb13-2"><a href="#cb13-2"></a>                    <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># 레벨</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a>                    <span class="at">beta =</span> <span class="cn">FALSE</span>, <span class="co"># 기울기에 대한 평활상수</span></span>
+<span id="cb13-4"><a href="#cb13-4"></a>                    <span class="at">gamma =</span> <span class="cn">FALSE</span>) <span class="co"># 계절성분에 대한 평활상수</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="fu">ls</span>(fit0) <span class="co"># 어떤 정보 값들 가지는 지 보여줌</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <style>
 .list-inline {list-style: none; margin:0; padding: 0}
@@ -431,7 +626,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>그 중에서 SSE 보고싶어서 SSE 선택</li>
 </ul>
 <div class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>fit0<span class="sc">$</span>SSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>fit0<span class="sc">$</span>SSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 437.636076191925
 </div>
@@ -440,11 +635,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>ses는 단순지수 평활만 사용가능</li>
 </ul>
 <div class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fit01 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># 사실 알파 안써도 얘가 적당히 넣어주긴함</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">initial =</span> <span class="st">'simple'</span>,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">h =</span> <span class="dv">10</span>) <span class="co"># 앞으로 몇 개 더 예측해줄지 개수 설정</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>(fit01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>fit01 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, </span>
+<span id="cb15-2"><a href="#cb15-2"></a>             <span class="at">alpha =</span> <span class="fl">0.9</span>, <span class="co"># 사실 알파 안써도 얘가 적당히 넣어주긴함</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a>             <span class="at">initial =</span> <span class="st">'simple'</span>,</span>
+<span id="cb15-4"><a href="#cb15-4"></a>             <span class="at">h =</span> <span class="dv">10</span>) <span class="co"># 앞으로 몇 개 더 예측해줄지 개수 설정</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a><span class="fu">ls</span>(fit01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <style>
 .list-inline {list-style: none; margin:0; padding: 0}
@@ -455,7 +650,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">summary</span>(fit01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>
 Forecast method: Simple exponential smoothing
@@ -498,13 +693,13 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 <li><p>holt는 이중지수 평활에서 사용</p></li>
 </ul>
 <div class="cell" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>fit02 <span class="ot">&lt;-</span> <span class="fu">holt</span>(mindex, </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">alpha =</span> <span class="fl">0.9</span>,</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">beta=</span><span class="dv">0</span>, <span class="co"># 기울기</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">phi=</span><span class="dv">0</span>,</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">initial =</span><span class="st">'simple'</span>,</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">h =</span> <span class="dv">10</span>)</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>(fit02)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>fit02 <span class="ot">&lt;-</span> <span class="fu">holt</span>(mindex, </span>
+<span id="cb18-2"><a href="#cb18-2"></a>              <span class="at">alpha =</span> <span class="fl">0.9</span>,</span>
+<span id="cb18-3"><a href="#cb18-3"></a>              <span class="at">beta=</span><span class="dv">0</span>, <span class="co"># 기울기</span></span>
+<span id="cb18-4"><a href="#cb18-4"></a>              <span class="at">phi=</span><span class="dv">0</span>,</span>
+<span id="cb18-5"><a href="#cb18-5"></a>              <span class="at">initial =</span><span class="st">'simple'</span>,</span>
+<span id="cb18-6"><a href="#cb18-6"></a>              <span class="at">h =</span> <span class="dv">10</span>)</span>
+<span id="cb18-7"><a href="#cb18-7"></a><span class="fu">ls</span>(fit02)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <style>
 .list-inline {list-style: none; margin:0; padding: 0}
@@ -515,7 +710,7 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit02)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">summary</span>(fit02)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>
 Forecast method: Holt's method
@@ -563,13 +758,13 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 <li>해석: HoltWinters의 경우 원래 Point Forecast의 첫 칸 비워져서 나오는데 여기서는 0을 일부러 넣어서 칸 맞춤<br></li>
 </ul>
 <div class="cell" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>fit_data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">fit_HoltWinters =</span> <span class="fu">c</span>(<span class="dv">0</span>,fit0<span class="sc">$</span>fitted[,<span class="st">'xhat'</span>]),</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">fit_ses =</span> fit01<span class="sc">$</span>fitted,</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">fit_holt =</span> fit02<span class="sc">$</span>fitted</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fit_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>fit_data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb21-2"><a href="#cb21-2"></a>  <span class="at">fit_HoltWinters =</span> <span class="fu">c</span>(<span class="dv">0</span>,fit0<span class="sc">$</span>fitted[,<span class="st">'xhat'</span>]),</span>
+<span id="cb21-3"><a href="#cb21-3"></a>  <span class="at">fit_ses =</span> fit01<span class="sc">$</span>fitted,</span>
+<span id="cb21-4"><a href="#cb21-4"></a>  <span class="at">fit_holt =</span> fit02<span class="sc">$</span>fitted</span>
+<span id="cb21-5"><a href="#cb21-5"></a>)</span>
+<span id="cb21-6"><a href="#cb21-6"></a></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="fu">head</span>(fit_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <table class="dataframe table table-sm table-striped">
@@ -595,23 +790,23 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 <li>평활지수 0.2, 0.9썼을 때 평활이 얼마나 달라지나?</li>
 </ul>
 <div class="cell" data-tags="[]" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>tmp.dat[, ses_0<span class="fl">.2</span> <span class="sc">:</span><span class="er">=</span> <span class="fu">ses</span>(mindex, <span class="at">alpha =</span> <span class="fl">0.2</span>)<span class="sc">$</span>fitted]</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>tmp.dat[, ses_0<span class="fl">.9</span> <span class="sc">:</span><span class="er">=</span> <span class="fu">ses</span>(mindex, <span class="at">alpha =</span> <span class="fl">0.9</span>)<span class="sc">$</span>fitted]</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>melt.tmp <span class="ot">&lt;-</span> <span class="fu">melt</span>(tmp.dat, <span class="at">id=</span><span class="st">'day'</span>)</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(melt.tmp, <span class="fu">aes</span>(day, value, <span class="at">col=</span>variable, <span class="at">size=</span>variable, <span class="at">lty=</span>variable))<span class="sc">+</span></span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">""</span>)<span class="sc">+</span><span class="fu">ylab</span>(<span class="st">""</span>)<span class="sc">+</span></span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_linetype_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">'solid'</span>,<span class="st">"dashed"</span>,<span class="st">"dashed"</span> ))<span class="sc">+</span></span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">'black'</span>,<span class="st">'orange'</span>, <span class="st">'steelblue'</span>))<span class="sc">+</span></span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="fl">0.2</span>,<span class="fl">1.2</span>,<span class="fl">1.2</span>))<span class="sc">+</span></span>
-<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">lty =</span> <span class="st">'none'</span>, <span class="at">size=</span><span class="st">'none'</span>)<span class="sc">+</span></span>
-<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.85</span>,<span class="fl">0.8</span>)) <span class="sc">+</span></span>
-<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">linetype=</span><span class="st">"solid"</span>, </span>
-<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">colour =</span><span class="st">"darkblue"</span>))<span class="sc">+</span></span>
-<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>tmp.dat[, ses_0<span class="fl">.2</span> <span class="sc">:</span><span class="er">=</span> <span class="fu">ses</span>(mindex, <span class="at">alpha =</span> <span class="fl">0.2</span>)<span class="sc">$</span>fitted]</span>
+<span id="cb22-2"><a href="#cb22-2"></a>tmp.dat[, ses_0<span class="fl">.9</span> <span class="sc">:</span><span class="er">=</span> <span class="fu">ses</span>(mindex, <span class="at">alpha =</span> <span class="fl">0.9</span>)<span class="sc">$</span>fitted]</span>
+<span id="cb22-3"><a href="#cb22-3"></a></span>
+<span id="cb22-4"><a href="#cb22-4"></a>melt.tmp <span class="ot">&lt;-</span> <span class="fu">melt</span>(tmp.dat, <span class="at">id=</span><span class="st">'day'</span>)</span>
+<span id="cb22-5"><a href="#cb22-5"></a></span>
+<span id="cb22-6"><a href="#cb22-6"></a><span class="fu">ggplot</span>(melt.tmp, <span class="fu">aes</span>(day, value, <span class="at">col=</span>variable, <span class="at">size=</span>variable, <span class="at">lty=</span>variable))<span class="sc">+</span></span>
+<span id="cb22-7"><a href="#cb22-7"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb22-8"><a href="#cb22-8"></a>  <span class="fu">xlab</span>(<span class="st">""</span>)<span class="sc">+</span><span class="fu">ylab</span>(<span class="st">""</span>)<span class="sc">+</span></span>
+<span id="cb22-9"><a href="#cb22-9"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb22-10"><a href="#cb22-10"></a>  <span class="fu">scale_linetype_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">'solid'</span>,<span class="st">"dashed"</span>,<span class="st">"dashed"</span> ))<span class="sc">+</span></span>
+<span id="cb22-11"><a href="#cb22-11"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">'black'</span>,<span class="st">'orange'</span>, <span class="st">'steelblue'</span>))<span class="sc">+</span></span>
+<span id="cb22-12"><a href="#cb22-12"></a>  <span class="fu">scale_size_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="fl">0.2</span>,<span class="fl">1.2</span>,<span class="fl">1.2</span>))<span class="sc">+</span></span>
+<span id="cb22-13"><a href="#cb22-13"></a>  <span class="fu">guides</span>(<span class="at">lty =</span> <span class="st">'none'</span>, <span class="at">size=</span><span class="st">'none'</span>)<span class="sc">+</span></span>
+<span id="cb22-14"><a href="#cb22-14"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.85</span>,<span class="fl">0.8</span>)) <span class="sc">+</span></span>
+<span id="cb22-15"><a href="#cb22-15"></a>  <span class="fu">theme</span>(<span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">linetype=</span><span class="st">"solid"</span>, </span>
+<span id="cb22-16"><a href="#cb22-16"></a>                                         <span class="at">colour =</span><span class="st">"darkblue"</span>))<span class="sc">+</span></span>
+<span id="cb22-17"><a href="#cb22-17"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
 </div>
@@ -622,14 +817,14 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 <li>최적의 평활상수 = SSE를 최소화 시켜주는 값</li>
 </ul>
 <div class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="fu">seq</span>(<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.1</span>), </span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">seq</span>(<span class="fl">0.81</span>, <span class="fl">0.99</span>, <span class="fl">0.01</span>)) <span class="co"># weight</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>sse <span class="ot">&lt;-</span> <span class="fu">sapply</span>(w, <span class="cf">function</span>(x) </span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sum</span>(<span class="fu">ses</span>(mindex, <span class="at">alpha =</span> x)<span class="sc">$</span>residuals<span class="sc">^</span><span class="dv">2</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>w <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="fu">seq</span>(<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.1</span>), </span>
+<span id="cb23-2"><a href="#cb23-2"></a>      <span class="fu">seq</span>(<span class="fl">0.81</span>, <span class="fl">0.99</span>, <span class="fl">0.01</span>)) <span class="co"># weight</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a></span>
+<span id="cb23-4"><a href="#cb23-4"></a>sse <span class="ot">&lt;-</span> <span class="fu">sapply</span>(w, <span class="cf">function</span>(x) </span>
+<span id="cb23-5"><a href="#cb23-5"></a>  <span class="fu">return</span>(<span class="fu">sum</span>(<span class="fu">ses</span>(mindex, <span class="at">alpha =</span> x)<span class="sc">$</span>residuals<span class="sc">^</span><span class="dv">2</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>sse <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>sse <span class="sc">%&gt;%</span> head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <style>
 .list-inline {list-style: none; margin:0; padding: 0}
@@ -640,18 +835,18 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>w[<span class="fu">which.min</span>(sse)]  <span class="co"># 최적 평활상수값</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>fit1 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, <span class="at">alpha=</span>w[<span class="fu">which.min</span>(sse)], <span class="at">h=</span><span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>w[<span class="fu">which.min</span>(sse)]  <span class="co"># 최적 평활상수값</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a>fit1 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, <span class="at">alpha=</span>w[<span class="fu">which.min</span>(sse)], <span class="at">h=</span><span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 0.9
 </div>
 </div>
 <p><code>-</code> 예측모형 plot</p>
 <div class="cell" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>w1 <span class="ot">=</span> w[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)]  <span class="co"># xaxis from 0.7 to 1.0</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>sse1 <span class="ot">=</span> sse[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)]</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(w1,sse1, <span class="at">type=</span><span class="st">"o"</span>, <span class="at">xlab=</span><span class="st">"weight"</span>, <span class="at">ylab=</span><span class="st">"sse"</span>, <span class="at">pch=</span><span class="dv">16</span>,</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Sum of squares of prediction error after 1 lag"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>w1 <span class="ot">=</span> w[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)]  <span class="co"># xaxis from 0.7 to 1.0</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a>sse1 <span class="ot">=</span> sse[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)]</span>
+<span id="cb26-3"><a href="#cb26-3"></a><span class="fu">plot</span>(w1,sse1, <span class="at">type=</span><span class="st">"o"</span>, <span class="at">xlab=</span><span class="st">"weight"</span>, <span class="at">ylab=</span><span class="st">"sse"</span>, <span class="at">pch=</span><span class="dv">16</span>,</span>
+<span id="cb26-4"><a href="#cb26-4"></a>     <span class="at">main=</span><span class="st">"Sum of squares of prediction error after 1 lag"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-24-output-1.png" class="img-fluid"></p>
 </div>
@@ -660,7 +855,7 @@ Feb 1995       11.14643 3.427276 18.86559 -0.65899942 22.95187</code></pre>
 <section id="잔차" class="level4">
 <h4 class="anchored" data-anchor-id="잔차">잔차</h4>
 <div class="cell" data-execution_count="24">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(fit1), <span class="at">mu=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">t.test</span>(<span class="fu">resid</span>(fit1), <span class="at">mu=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>
     One Sample t-test
@@ -682,12 +877,12 @@ sample estimates:
 <li>alpha = 0.9</li>
 </ol>
 <div class="cell" data-execution_count="25">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit1, <span class="at">xlab=</span><span class="st">""</span>, <span class="at">ylab=</span><span class="st">""</span>, </span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Simple Exponential Smoothing Value alpha=0.9"</span>, </span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty=</span><span class="dv">1</span>,<span class="at">col=</span><span class="st">"black"</span> )</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit1), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>, <span class="st">"alpha=0.9"</span>), </span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">plot</span>(fit1, <span class="at">xlab=</span><span class="st">""</span>, <span class="at">ylab=</span><span class="st">""</span>, </span>
+<span id="cb29-2"><a href="#cb29-2"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Simple Exponential Smoothing Value alpha=0.9"</span>, </span>
+<span id="cb29-3"><a href="#cb29-3"></a>     <span class="at">lty=</span><span class="dv">1</span>,<span class="at">col=</span><span class="st">"black"</span> )</span>
+<span id="cb29-4"><a href="#cb29-4"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit1), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb29-5"><a href="#cb29-5"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>, <span class="st">"alpha=0.9"</span>), </span>
+<span id="cb29-6"><a href="#cb29-6"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-26-output-1.png" class="img-fluid"></p>
 </div>
@@ -696,8 +891,8 @@ sample estimates:
 <li>마지막 보면 파란색 줄로 쭉 이어지는게 더 이상 추가해줄 데이터가 없어서 예측이 같게 이어지는 거임.<br> 하지만 시간이 지남에 따라 신뢰구간은 늘어나기에 범위적으로 늘어나는 표현이 일어남<br> 마지막 자세히 보면 빨간 점선이 검은 선보다 아래에 있다. alpha = 0.9라는 것은 최근 실제 정보를 9만큼, 예측값을 1만큼 내분한 점을 표현하는 것이기에<br> 보면 파란색 줄은 검은선보다 10%정도만큼 살짝 내려온 곳에 위치하게 된다.</li>
 </ul>
 <div class="cell" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit1<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : alpha=0.9"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">plot</span>(fit1<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,</span>
+<span id="cb30-2"><a href="#cb30-2"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : alpha=0.9"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-27-output-1.png" class="img-fluid"></p>
 </div>
@@ -706,20 +901,20 @@ sample estimates:
 <li>alpha = 0.2</li>
 </ol>
 <div class="cell" data-execution_count="27">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>fit2 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, <span class="at">alpha=</span><span class="fl">0.2</span>, <span class="at">h=</span><span class="dv">6</span>) </span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit2, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">ylab=</span><span class="st">"mindex"</span>, </span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Simple Exponential Smoothing Value alpha=0.2"</span>, </span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty=</span><span class="dv">1</span>,<span class="at">col=</span><span class="st">"black"</span>)</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit2), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>,<span class="st">"alpha=0.2"</span>), </span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>fit2 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex, <span class="at">alpha=</span><span class="fl">0.2</span>, <span class="at">h=</span><span class="dv">6</span>) </span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="fu">plot</span>(fit2, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">ylab=</span><span class="st">"mindex"</span>, </span>
+<span id="cb31-3"><a href="#cb31-3"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Simple Exponential Smoothing Value alpha=0.2"</span>, </span>
+<span id="cb31-4"><a href="#cb31-4"></a>     <span class="at">lty=</span><span class="dv">1</span>,<span class="at">col=</span><span class="st">"black"</span>)</span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit2), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb31-6"><a href="#cb31-6"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>,<span class="st">"alpha=0.2"</span>), </span>
+<span id="cb31-7"><a href="#cb31-7"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit2<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,</span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : alpha=0.2"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">plot</span>(fit2<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,</span>
+<span id="cb32-2"><a href="#cb32-2"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : alpha=0.2"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-29-output-1.png" class="img-fluid"></p>
 </div>
@@ -729,7 +924,7 @@ sample estimates:
 <section id="두-모형의-비교" class="level3">
 <h3 class="anchored" data-anchor-id="두-모형의-비교">두 모형의 비교</h3>
 <div class="cell" data-execution_count="29">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">rbind</span>(<span class="fu">accuracy</span>(fit1), <span class="fu">accuracy</span>(fit2)), <span class="at">digit=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">round</span>(<span class="fu">rbind</span>(<span class="fu">accuracy</span>(fit1), <span class="fu">accuracy</span>(fit2)), <span class="at">digit=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
 <table class="dataframe table table-sm table-striped">
@@ -748,8 +943,8 @@ sample estimates:
 <section id="추정된-alpha를-이용한-단순지수평활" class="level3">
 <h3 class="anchored" data-anchor-id="추정된-alpha를-이용한-단순지수평활">추정된 alpha를 이용한 단순지수평활</h3>
 <div class="cell" data-execution_count="30">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>fit3 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex,<span class="at">h=</span><span class="dv">6</span>)</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>fit3<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>fit3 <span class="ot">&lt;-</span> <span class="fu">ses</span>(mindex,<span class="at">h=</span><span class="dv">6</span>)</span>
+<span id="cb34-2"><a href="#cb34-2"></a>fit3<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>Simple exponential smoothing 
 
@@ -772,14 +967,14 @@ Call:
 <li>alpha 따로 입력안하면 알아서 최적으로 생각하는 alpha 입력해줌<br> 여기서는 Smoothing parameters : alpha = 0.9031로 해줌.</li>
 </ul>
 <div class="cell" data-execution_count="31">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit3, <span class="at">xlab=</span><span class="st">""</span>, <span class="at">ylab=</span><span class="st">""</span>, <span class="at">main=</span><span class="st">""</span>,</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>     <span class="co"># main="중간재 출하지수와 단순지수평활값 : alpha estimated", </span></span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>)</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(fit3<span class="sc">$</span>fitted, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>,<span class="st">"estimated alpha"</span>), </span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit3<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,  </span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : estimated alpha"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">plot</span>(fit3, <span class="at">xlab=</span><span class="st">""</span>, <span class="at">ylab=</span><span class="st">""</span>, <span class="at">main=</span><span class="st">""</span>,</span>
+<span id="cb36-2"><a href="#cb36-2"></a>     <span class="co"># main="중간재 출하지수와 단순지수평활값 : alpha estimated", </span></span>
+<span id="cb36-3"><a href="#cb36-3"></a>     <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>)</span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="fu">lines</span>(fit3<span class="sc">$</span>fitted, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Mindex"</span>,<span class="st">"estimated alpha"</span>), </span>
+<span id="cb36-6"><a href="#cb36-6"></a>       <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>))</span>
+<span id="cb36-7"><a href="#cb36-7"></a><span class="fu">plot</span>(fit3<span class="sc">$</span>residuals, <span class="at">ylab=</span><span class="st">"residual"</span>,  </span>
+<span id="cb36-8"><a href="#cb36-8"></a>     <span class="at">main=</span><span class="st">"Time Series Plot of Prediction Errors : estimated alpha"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-32-output-1.png" class="img-fluid"></p>
 </div>
@@ -792,21 +987,21 @@ Call:
 <section id="이중-지수-평활법" class="level2">
 <h2 class="anchored" data-anchor-id="이중-지수-평활법">이중 지수 평활법</h2>
 <div class="cell" data-execution_count="32">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"stock.txt"</span>) </span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>stock <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start=</span><span class="fu">c</span>(<span class="dv">1984</span>,<span class="dv">1</span>), <span class="at">frequency=</span><span class="dv">12</span>)</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1984-01-01"</span>), </span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>                 <span class="at">by=</span><span class="st">'month'</span>, <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">z=</span>z  </span>
-<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, z)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col=</span><span class="st">'skyblue'</span>) <span class="sc">+</span></span>
-<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">col=</span><span class="st">'steelblue'</span>)<span class="sc">+</span></span>
-<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># scale_x_date(date_breaks = "1 year", date_labels = "%Y-%m") +</span></span>
-<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"monthly stock index"</span>)<span class="sc">+</span></span>
-<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>),</span>
-<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"stock.txt"</span>) </span>
+<span id="cb37-2"><a href="#cb37-2"></a>stock <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start=</span><span class="fu">c</span>(<span class="dv">1984</span>,<span class="dv">1</span>), <span class="at">frequency=</span><span class="dv">12</span>)</span>
+<span id="cb37-3"><a href="#cb37-3"></a></span>
+<span id="cb37-4"><a href="#cb37-4"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb37-5"><a href="#cb37-5"></a>  <span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1984-01-01"</span>), </span>
+<span id="cb37-6"><a href="#cb37-6"></a>                 <span class="at">by=</span><span class="st">'month'</span>, <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
+<span id="cb37-7"><a href="#cb37-7"></a>  <span class="at">z=</span>z  </span>
+<span id="cb37-8"><a href="#cb37-8"></a>)</span>
+<span id="cb37-9"><a href="#cb37-9"></a></span>
+<span id="cb37-10"><a href="#cb37-10"></a><span class="fu">ggplot</span>(tmp.data, <span class="fu">aes</span>(day, z)) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">col=</span><span class="st">'skyblue'</span>) <span class="sc">+</span></span>
+<span id="cb37-11"><a href="#cb37-11"></a>  <span class="fu">geom_point</span>(<span class="at">col=</span><span class="st">'steelblue'</span>)<span class="sc">+</span></span>
+<span id="cb37-12"><a href="#cb37-12"></a>  <span class="co"># scale_x_date(date_breaks = "1 year", date_labels = "%Y-%m") +</span></span>
+<span id="cb37-13"><a href="#cb37-13"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"monthly stock index"</span>)<span class="sc">+</span></span>
+<span id="cb37-14"><a href="#cb37-14"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">20</span>),</span>
+<span id="cb37-15"><a href="#cb37-15"></a>        <span class="at">axis.title =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-33-output-1.png" class="img-fluid"></p>
 </div>
@@ -815,7 +1010,7 @@ Call:
 <li>전체적으로 증가하는 추세라고 볼 수도 있지만 증가하다가 감소하다 다시 잠잠해지는<br> 즉, 일반적인 선형추세모형을 사용하기는 어렵다.</li>
 </ul>
 <div class="cell" data-execution_count="33">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(stock, <span class="at">main =</span> <span class="st">'monthly stock index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">plot.ts</span>(stock, <span class="at">main =</span> <span class="st">'monthly stock index'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-34-output-1.png" class="img-fluid"></p>
 </div>
@@ -826,8 +1021,8 @@ Call:
 <li>alpha, beta 동일하게 사용하므로 1모수</li>
 </ul>
 <div class="cell" data-execution_count="34">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>fit4 <span class="ot">=</span> <span class="fu">holt</span>(stock, <span class="at">alpha=</span><span class="fl">0.6</span>, <span class="at">beta=</span><span class="fl">0.6</span>, <span class="at">h=</span><span class="dv">6</span>) </span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>fit4<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>fit4 <span class="ot">=</span> <span class="fu">holt</span>(stock, <span class="at">alpha=</span><span class="fl">0.6</span>, <span class="at">beta=</span><span class="fl">0.6</span>, <span class="at">h=</span><span class="dv">6</span>) </span>
+<span id="cb39-2"><a href="#cb39-2"></a>fit4<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>Holt's method 
 
@@ -849,11 +1044,11 @@ Call:
 </div>
 </div>
 <div class="cell" data-execution_count="35">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit4, <span class="at">ylab=</span><span class="st">""</span>, <span class="at">xlab=</span><span class="st">""</span>,  <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>,</span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Stock index and double exponential smoothing: alpha=beta=0.6"</span></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>     )</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit4), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Index"</span>, <span class="st">"Double"</span>), <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">plot</span>(fit4, <span class="at">ylab=</span><span class="st">""</span>, <span class="at">xlab=</span><span class="st">""</span>,  <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>,</span>
+<span id="cb41-2"><a href="#cb41-2"></a>     <span class="at">main=</span><span class="st">"Stock index and double exponential smoothing: alpha=beta=0.6"</span></span>
+<span id="cb41-3"><a href="#cb41-3"></a>     )</span>
+<span id="cb41-4"><a href="#cb41-4"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit4), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb41-5"><a href="#cb41-5"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Index"</span>, <span class="st">"Double"</span>), <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-36-output-1.png" class="img-fluid"></p>
 </div>
@@ -862,7 +1057,7 @@ Call:
 <li>뒤에 예측한 것을 보면 마지막 시점에서 추세가 아래로 내려가고 있으므로 쭉 내려가는 것으로 예측이 된거임.<br> 딱히 예측에 좋은 거 같지는 않음.</li>
 </ul>
 <div class="cell" data-execution_count="36">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">resid</span>(fit4), <span class="at">main=</span><span class="st">"Time series plot of forecasting error"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">plot</span>(<span class="fu">resid</span>(fit4), <span class="at">main=</span><span class="st">"Time series plot of forecasting error"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-37-output-1.png" class="img-fluid"></p>
 </div>
@@ -874,8 +1069,8 @@ Call:
 <li>alpha, beta 선택하지 않으면 알아서 선택해서 돌려줌.</li>
 </ul>
 <div class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>fit5 <span class="ot">=</span> <span class="fu">holt</span>(stock, <span class="at">h=</span><span class="dv">6</span>)</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>fit5<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>fit5 <span class="ot">=</span> <span class="fu">holt</span>(stock, <span class="at">h=</span><span class="dv">6</span>)</span>
+<span id="cb43-2"><a href="#cb43-2"></a>fit5<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>Holt's method 
 
@@ -901,17 +1096,17 @@ Call:
 <li><p>beta를 0.6으로 쓸 때보다는 기울기가 훨씬 완만한 모습을 보인다.</p></li>
 </ul>
 <div class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit5, <span class="at">ylab=</span><span class="st">"Index"</span>, <span class="at">xlab=</span><span class="st">"year"</span>,  <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>,</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Double Exponential Smoothing Value : alpha, beta estimated"</span>)</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit5), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Index"</span>, <span class="st">"Double"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">plot</span>(fit5, <span class="at">ylab=</span><span class="st">"Index"</span>, <span class="at">xlab=</span><span class="st">"year"</span>,  <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"black"</span>,</span>
+<span id="cb45-2"><a href="#cb45-2"></a>     <span class="at">main=</span><span class="st">"Intermediate Goods Shipment Index and Double Exponential Smoothing Value : alpha, beta estimated"</span>)</span>
+<span id="cb45-3"><a href="#cb45-3"></a><span class="fu">lines</span>(<span class="fu">fitted</span>(fit5), <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb45-4"><a href="#cb45-4"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Index"</span>, <span class="st">"Double"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-39-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">resid</span>(fit5), <span class="at">main=</span><span class="st">"Time series plot of forecasting error: alpha, beta estimated"</span>)</span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">plot</span>(<span class="fu">resid</span>(fit5), <span class="at">main=</span><span class="st">"Time series plot of forecasting error: alpha, beta estimated"</span>)</span>
+<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-40-output-1.png" class="img-fluid"></p>
 </div>
@@ -922,16 +1117,16 @@ Call:
 <h2 class="anchored" data-anchor-id="holt-winters-method계절">Holt-Winters Method(계절)</h2>
 <p><code>-</code> 항공사 데이터 사용</p>
 <div class="cell" data-execution_count="40">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"koreapass.txt"</span>)</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>pass <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start=</span><span class="fu">c</span>(<span class="dv">1981</span>,<span class="dv">1</span>), <span class="at">frequency=</span><span class="dv">12</span>) </span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.ts</span>(pass)</span>
-<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
-<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1981-01-01"</span>), </span>
-<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>                 <span class="at">by=</span><span class="st">'month'</span>, <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
-<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">z=</span>z  </span>
-<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a>z <span class="ot">&lt;-</span> <span class="fu">scan</span>(<span class="st">"koreapass.txt"</span>)</span>
+<span id="cb47-2"><a href="#cb47-2"></a>pass <span class="ot">&lt;-</span> <span class="fu">ts</span>(z, <span class="at">start=</span><span class="fu">c</span>(<span class="dv">1981</span>,<span class="dv">1</span>), <span class="at">frequency=</span><span class="dv">12</span>) </span>
+<span id="cb47-3"><a href="#cb47-3"></a></span>
+<span id="cb47-4"><a href="#cb47-4"></a><span class="fu">plot.ts</span>(pass)</span>
+<span id="cb47-5"><a href="#cb47-5"></a></span>
+<span id="cb47-6"><a href="#cb47-6"></a>tmp.data <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb47-7"><a href="#cb47-7"></a>  <span class="at">day =</span> <span class="fu">seq.Date</span>(<span class="fu">as.Date</span>(<span class="st">"1981-01-01"</span>), </span>
+<span id="cb47-8"><a href="#cb47-8"></a>                 <span class="at">by=</span><span class="st">'month'</span>, <span class="at">length.out=</span><span class="fu">length</span>(z)),</span>
+<span id="cb47-9"><a href="#cb47-9"></a>  <span class="at">z=</span>z  </span>
+<span id="cb47-10"><a href="#cb47-10"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-41-output-1.png" class="img-fluid"></p>
 </div>
@@ -945,8 +1140,8 @@ Call:
 <li>가법이면 <code>seasonal="additive"</code><br> 승법이면 <code>seasonal="multiplicative"</code></li>
 </ul>
 <div class="cell" data-execution_count="41">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>fit6 <span class="ot">=</span> <span class="fu">hw</span>(pass, <span class="at">seasonal=</span><span class="st">"additive"</span>, <span class="at">h=</span><span class="dv">12</span>) <span class="co"># 1년 예측이라 12</span></span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>fit6<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a>fit6 <span class="ot">=</span> <span class="fu">hw</span>(pass, <span class="at">seasonal=</span><span class="st">"additive"</span>, <span class="at">h=</span><span class="dv">12</span>) <span class="co"># 1년 예측이라 12</span></span>
+<span id="cb48-2"><a href="#cb48-2"></a>fit6<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>Holt-Winters' additive method 
 
@@ -974,23 +1169,23 @@ Call:
 <li>alpha, beta, gamma 따로 입력하지 않았으므로 알아서 해줌.</li>
 </ul>
 <div class="cell" data-execution_count="42">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit6,  <span class="at">ylab=</span><span class="st">"passenger"</span>, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"blue"</span>,</span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Winters Additive Seasonal Exponential plot of Smooth Material"</span>)</span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(fit6<span class="sc">$</span>fitted, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"blue"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Pass"</span>, <span class="st">"Additive"</span>),  <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">plot</span>(fit6,  <span class="at">ylab=</span><span class="st">"passenger"</span>, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"blue"</span>,</span>
+<span id="cb50-2"><a href="#cb50-2"></a>     <span class="at">main=</span><span class="st">"Winters Additive Seasonal Exponential plot of Smooth Material"</span>)</span>
+<span id="cb50-3"><a href="#cb50-3"></a><span class="fu">lines</span>(fit6<span class="sc">$</span>fitted, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb50-4"><a href="#cb50-4"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"blue"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Pass"</span>, <span class="st">"Additive"</span>),  <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-43-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="43">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(<span class="fu">resid</span>(fit6), <span class="at">ylab=</span><span class="st">"residual"</span>, </span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">"Prediction error of additive model"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">ts.plot</span>(<span class="fu">resid</span>(fit6), <span class="at">ylab=</span><span class="st">"residual"</span>, </span>
+<span id="cb51-2"><a href="#cb51-2"></a>        <span class="at">main=</span><span class="st">"Prediction error of additive model"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-44-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="44">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(<span class="fu">lm</span>(<span class="fu">resid</span>(fit6)<span class="sc">~</span><span class="dv">1</span>), <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">dwtest</span>(<span class="fu">lm</span>(<span class="fu">resid</span>(fit6)<span class="sc">~</span><span class="dv">1</span>), <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>
     Durbin-Watson test
@@ -1007,8 +1202,8 @@ alternative hypothesis: true autocorrelation is not 0</code></pre>
 <section id="holt-winters-multiplicative-model" class="level3">
 <h3 class="anchored" data-anchor-id="holt-winters-multiplicative-model">Holt Winters multiplicative model</h3>
 <div class="cell" data-execution_count="45">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>fit7<span class="ot">=</span> <span class="fu">hw</span>(pass, <span class="at">seasonal=</span><span class="st">"multiplicative"</span>,<span class="at">h=</span><span class="dv">12</span>) </span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>fit7<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a>fit7<span class="ot">=</span> <span class="fu">hw</span>(pass, <span class="at">seasonal=</span><span class="st">"multiplicative"</span>,<span class="at">h=</span><span class="dv">12</span>) </span>
+<span id="cb54-2"><a href="#cb54-2"></a>fit7<span class="sc">$</span>model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>Holt-Winters' multiplicative method 
 
@@ -1033,10 +1228,10 @@ Call:
 </div>
 </div>
 <div class="cell" data-execution_count="46">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fit7,  <span class="at">ylab=</span><span class="st">"passenger"</span>, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"blue"</span>,</span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"Winters Time series plot of multiplicative seasonal exponential smoothed data"</span>)</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(fit7<span class="sc">$</span>fitted, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"blue"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Pass"</span>, <span class="st">"Multiplicative"</span>),  <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">plot</span>(fit7,  <span class="at">ylab=</span><span class="st">"passenger"</span>, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">lty=</span><span class="dv">1</span>, <span class="at">col=</span><span class="st">"blue"</span>,</span>
+<span id="cb56-2"><a href="#cb56-2"></a>     <span class="at">main=</span><span class="st">"Winters Time series plot of multiplicative seasonal exponential smoothed data"</span>)</span>
+<span id="cb56-3"><a href="#cb56-3"></a><span class="fu">lines</span>(fit7<span class="sc">$</span>fitted, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb56-4"><a href="#cb56-4"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">lty=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">col=</span><span class="fu">c</span>(<span class="st">"blue"</span>,<span class="st">"red"</span>), <span class="fu">c</span>(<span class="st">"Pass"</span>, <span class="st">"Multiplicative"</span>),  <span class="at">bty =</span> <span class="st">"n"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-47-output-1.png" class="img-fluid"></p>
 </div>
@@ -1045,14 +1240,14 @@ Call:
 <li>해석 : 가법모형에서는 예측 구간에서 앞에 있는 것을 붙여 놓은 것 마냥, 사실 분산이 점점 증가하고 있기에 예측 구간의 폭도 같이 늘어나야 하는데<br> 그렇지 못한 반면, 승법모형의 경우 분산이 커지는 것을 고려해서 진폭이 커지는 형태를 표현해준다.</li>
 </ul>
 <div class="cell" data-execution_count="47">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(z<span class="sc">-</span>fit7<span class="sc">$</span>fitted, <span class="at">ylab=</span><span class="st">"residual"</span>, </span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">"Prediction error of multiplicative model"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="fu">ts.plot</span>(z<span class="sc">-</span>fit7<span class="sc">$</span>fitted, <span class="at">ylab=</span><span class="st">"residual"</span>, </span>
+<span id="cb57-2"><a href="#cb57-2"></a>        <span class="at">main=</span><span class="st">"Prediction error of multiplicative model"</span>); <span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="2022-10-05-시계열자료분석-학습2_files/figure-html/cell-48-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="48">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dwtest</span>(<span class="fu">lm</span>(<span class="fu">resid</span>(fit7)<span class="sc">~</span><span class="dv">1</span>), <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu">dwtest</span>(<span class="fu">lm</span>(<span class="fu">resid</span>(fit7)<span class="sc">~</span><span class="dv">1</span>), <span class="at">alternative =</span> <span class="st">'two.sided'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>
     Durbin-Watson test
